@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('~assets/fonts/Poppins/Poppins-SemiBold.ttf') format('truetype'),
+        url('~assets/fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  *{ 
+        font-family: "Poppins", sans-serif; 
+        font-style: normal;
+      
+  }
+.bg{
+    background-color: red;
+}
+.icon_ig{
+    background: linear-gradient(241.05deg, #7BBEF7 -28.17%, #9335FF 21.23%, #F5DE9B 70.63%) !important;
+
+}
+.bg_gradient_text {
+    background: linear-gradient(87.39deg, #F5DE9B 0.77%, #E069DC 51.02%, #7BBEF7 106.56%);
+    background-clip: text;
+    -webkit-background-clip: text; /* Untuk dukungan browser WebKit (Safari, Chrome) */
+    color: transparent;
+    -webkit-text-fill-color: transparent; /* Untuk dukungan browser WebKit */
+}

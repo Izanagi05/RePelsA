@@ -1,0 +1,138 @@
+<template>
+  <div class="">
+    <div class="bg-color-custom-11">
+      
+    <div class="grid grid-cols-12 ">
+      <div class="col-span-6 p-6 h-full flex justify-start items-end">
+        <div class="w-4/5">
+          <gradient-text message="Faces" />
+          <p class="text-6xl text-color-custom-10">Behind the</p>
+          <gradient-text message="Future" />
+          <p class="mt-8 text-color-custom-10">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+            vitae corrupti aliquid beatae excepturi cum sed commodi perspiciatis
+            rem esse?
+          </p>
+          <button
+            class="rounded-full text-xl mt-8 flex items-center bg-color-custom-10 p-3"
+          >
+            Our Instagram
+            <span class="ml-2 p-2 rounded-full icon_ig"
+              ><img src="~/assets/img/svg/ig.svg" alt="" class="w-5" srcset=""
+            /></span>
+          </button>
+        </div>
+      </div>
+      <div class="col-span-6 p-6">
+        <div class="grid grid-cols-12">
+          <div class="col-span-8 pt-2 flex justify-center align-center">
+            <div>
+              <div class="flex justify-between mb-8">
+                <img
+                  src="~/assets/img/img.jpg"
+                  class="w-44 h-40 rounded-tl-full rounded-bl-full"
+                  alt=""
+                  srcset=""
+                />
+                <img
+                  src="~/assets/img/img.jpg"
+                  class="w-40 rounded-full"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <img
+                src="~/assets/img/img.jpg"
+                class="w-full"
+                style="
+                  border-top-left-radius: 30%;
+                  border-bottom-right-radius: 30%;
+                "
+                alt=""
+                srcset=""
+              />
+            </div>
+          </div>
+          <div class="col-span-4 pt- flex justify-end">
+            <!-- <div class="grid grid-cols-12 h-full">
+              <div class="col-span-12 flex align-start px-4">
+                <img
+                  src="~/assets/img/img.jpg"
+                  class="w-full max-h-min rounded-full"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="col-span-12 flex items-end px-6">
+              
+              </div>
+            </div> -->
+            <div class="flex flex-col justify-between h-full"> 
+              <div class="flex justify-center">
+                <img
+                  src="~/assets/img/img.jpg"
+                  class="w-32 h-40 object-cover"
+                  style="border-top-left-radius: 30%"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="flex justify-center"></div>
+              <div class="flex justify-center">
+                <img
+                  src="~/assets/img/img.jpg"
+                  class="h-40 object-cover rounded-full"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="flex justify-center">
+                <img
+                  src="~/assets/img/img.jpg"
+                  class="w-32 h-40 object-cover rounded-bl-full rounded-br-full"
+                  alt=""
+                  srcset=""
+                />
+                <!-- </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="grid grid-cols-12">
+      <div class="col-span-8">
+        <div class="grid grid-cols-12">
+          <div class="col-span-6"></div>
+          <div class="col-span-6"></div>
+          <div class="col-span-6"></div>
+          <div class="col-span-6"></div>
+        </div>
+      </div>
+      <div class="col-span-4"></div>
+    </div>
+    
+  </div>
+</template>
+
+<script>
+import gradientText from "~/components/gradientText.vue";
+export default {
+  components: { gradientText },
+  data() {
+    return {
+      tes: "is",
+    };
+  },
+  methods: {
+    tess() {
+      this.tes = "hayy";
+      console.log(this.tess);
+    },
+  },
+};
+</script>
+
+<style>
+</style>
