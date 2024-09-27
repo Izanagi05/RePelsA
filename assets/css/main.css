@@ -13,6 +13,39 @@
 .bg{
     background-color: red;
 }
+.main-shadow{
+    box-shadow: 8px 8px 0px 0px rgba(0,0,0,1);
+-webkit-box-shadow: 8px 8px 0px 0px rgba(0,0,0,1);
+-moz-box-shadow: 8px 8px 0px 0px rgba(0,0,0,1);
+transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.main-shadow:active {
+    transform: translate(2px, 2px);  
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 1); 
+}
+.main-shadowcardname{
+    box-shadow: 3px 3px 0px 0px rgba(0,0,0,1);
+-webkit-box-shadow: 3px 3px 0px 0px rgba(0,0,0,1);
+-moz-box-shadow: 3px 3px 0px 0px rgba(0,0,0,1);
+transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.main-shadowcardname:active {
+    transform: translate(2px, 2px); 
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 1); 
+}
+.main-shadowbutton{
+    box-shadow: 3px 3px 0px 0px rgba(0,0,0,1);
+-webkit-box-shadow: 3px 3px 0px 0px rgba(0,0,0,1);
+-moz-box-shadow: 3px 3px 0px 0px rgba(0,0,0,1);
+transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.main-shadowbutton:active {
+    transform: translate(2px, 2px); 
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 1); 
+}
 .icon_ig{
     background: linear-gradient(241.05deg, #7BBEF7 -28.17%, #9335FF 21.23%, #F5DE9B 70.63%) !important;
 
@@ -20,7 +53,23 @@
 .bg_gradient_text {
     background: linear-gradient(87.39deg, #F5DE9B 0.77%, #E069DC 51.02%, #7BBEF7 106.56%);
     background-clip: text;
-    -webkit-background-clip: text; /* Untuk dukungan browser WebKit (Safari, Chrome) */
+    -webkit-background-clip: text; 
     color: transparent;
-    -webkit-text-fill-color: transparent; /* Untuk dukungan browser WebKit */
+    -webkit-text-fill-color: transparent; 
+}
+.bg_gradient_text2{
+    background: linear-gradient(90deg, #F5DE9B -18.22%, #9335FF 51.81%, #7986FE 121.84%);
+
+    background-clip: text;
+    -webkit-background-clip: text; 
+    color: transparent;
+    -webkit-text-fill-color: transparent; 
+}
+.bg_gradient_text3{
+    background: url('~/assets/img/bg-gradientabout.png');
+
+    background-clip: text;
+    -webkit-background-clip: text; 
+    color: transparent;
+    -webkit-text-fill-color: transparent; 
 }

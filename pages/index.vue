@@ -1,118 +1,299 @@
 <template>
   <div class="">
-    <div class="bg-color-custom-11">
-      
-    <div class="grid grid-cols-12 ">
-      <div class="col-span-6 p-6 h-full flex justify-start items-end">
-        <div class="w-4/5">
-          <gradient-text message="Faces" />
-          <p class="text-6xl text-color-custom-10">Behind the</p>
-          <gradient-text message="Future" />
-          <p class="mt-8 text-color-custom-10">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-            vitae corrupti aliquid beatae excepturi cum sed commodi perspiciatis
-            rem esse?
-          </p>
-          <button
-            class="rounded-full text-xl mt-8 flex items-center bg-color-custom-10 p-3"
-          >
-            Our Instagram
-            <span class="ml-2 p-2 rounded-full icon_ig"
-              ><img src="~/assets/img/svg/ig.svg" alt="" class="w-5" srcset=""
-            /></span>
-          </button>
-        </div>
-      </div>
-      <div class="col-span-6 p-6">
-        <div class="grid grid-cols-12">
-          <div class="col-span-8 pt-2 flex justify-center align-center">
-            <div>
-              <div class="flex justify-between mb-8">
-                <img
-                  src="~/assets/img/img.jpg"
-                  class="w-44 h-40 rounded-tl-full rounded-bl-full"
+    <div class="bg-color-custom-11 px-20 py-20 home" style="border-bottom-right-radius:300px ">
+      <svg
+        class="absolute z-0 left-8"
+        width="560"
+        height="560"
+        viewBox="0 0 560 560"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="280"
+          cy="280"
+          r="240"
+          fill="#010506"
+          stroke="#0D0D0D"
+          stroke-width="80"
+        />
+      </svg>
+      <div class="grid grid-cols-12">
+        <div class="col-span-6 z-10 h-full flex justify-start items-end">
+          <div class="w-4/5">
+            <gradient-text
+              bg_gradient_class="bg_gradient_text"
+              message="Faces"
+            />
+            <p class="text-6xl text-color-custom-10">Behind the</p>
+            <gradient-text
+              bg_gradient_class="bg_gradient_text"
+              message="Future"
+            />
+            <p class="mt-8 text-color-custom-10">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+              vitae corrupti aliquid beatae excepturi cum sed commodi
+              perspiciatis rem esse?
+            </p>
+            <button
+              class="rounded-full text-xl mt-8 flex items-center bg-color-custom-10 p-3"
+            >
+              Our Instagram
+              <span class="ml-2 p-2 rounded-full icon_ig"
+                ><img
+                  src="~/assets/img/svg/ig.svg"
                   alt=""
+                  class="w-5"
                   srcset=""
-                />
+              /></span>
+            </button>
+          </div>
+        </div>
+        <div class="col-span-6 p-6">
+          <div class="grid grid-cols-12">
+            <div class="col-span-8 pt-2 flex justify-center align-center">
+              <div>
+                <div class="flex justify-between mb-8">
+                  <img
+                    src="~/assets/img/img.jpg"
+                    class="w-44 h-40 rounded-tl-full rounded-bl-full"
+                    alt=""
+                    srcset=""
+                  />
+                  <img
+                    src="~/assets/img/img.jpg"
+                    class="w-40 rounded-full"
+                    alt=""
+                    srcset=""
+                  />
+                </div>
                 <img
                   src="~/assets/img/img.jpg"
-                  class="w-40 rounded-full"
+                  class="w-full"
+                  style="
+                    border-top-left-radius: 30%;
+                    border-bottom-right-radius: 30%;
+                  "
                   alt=""
                   srcset=""
                 />
               </div>
+            </div>
+            <div class="col-span-4 pt-x flex justify-end"> 
+              <div class="flex flex-col justify-between h-full">
+                <div class="flex justify-center">
+                  <img
+                    src="~/assets/img/img.jpg"
+                    class="w-32 h-40 object-cover"
+                    style="border-top-left-radius: 30%"
+                    alt=""
+                    srcset=""
+                  />
+                </div>
+                <div class="flex justify-center"></div>
+                <div class="flex justify-center">
+                  <img
+                    src="~/assets/img/img.jpg"
+                    class="h-40 object-cover rounded-full"
+                    alt=""
+                    srcset=""
+                  />
+                </div>
+                <div class="flex justify-center">
+                  <img
+                    src="~/assets/img/img.jpg"
+                    class="w-32 h-40 object-cover rounded-bl-full rounded-br-full"
+                    alt=""
+                    srcset=""
+                  />
+                  <!-- </div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="px-10 Activity pt-20">
+      <div class="grid grid-cols-12">
+        <div class="col-span-7">
+          <div class="grid grid-cols-12 gap-4">
+            <div class="col-span-6">
+              <div class="card main-shadow bg-color-custom-9 rounded-xl">
+                <img
+                  src="~/assets/img/card1.png"
+                  class="rounded-tl-xl rounded-tr-xl h-56 w-full object-cover"
+                  alt=""
+                  srcset=""
+                />
+                <div class="p-4">
+                  <div class="font-semibold text-xl">Activity1</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-span-6">
+              <div class="card main-shadow bg-color-custom-9 rounded-xl">
+                <img
+                  src="~/assets/img/card1.png"
+                  class="rounded-tl-xl rounded-tr-xl h-56 w-full object-cover"
+                  alt=""
+                  srcset=""
+                />
+                <div class="p-4">
+                  <div class="font-semibold text-xl">Activity1</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-span-6">
+              <div class="card main-shadow bg-color-custom-9 rounded-xl">
+                <img
+                  src="~/assets/img/card1.png"
+                  class="rounded-tl-xl rounded-tr-xl h-56 w-full object-cover"
+                  alt=""
+                  srcset=""
+                />
+                <div class="p-4">
+                  <div class="font-semibold text-xl">Activity1</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-span-6">
+              <div class="card main-shadow bg-color-custom-9 rounded-xl">
+                <img
+                  src="~/assets/img/card1.png"
+                  class="rounded-tl-xl rounded-tr-xl h-56 w-full object-cover"
+                  alt=""
+                  srcset=""
+                />
+                <div class="p-4">
+                  <div class="font-semibold text-xl">Activity1</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-5 flex justify-center">
+          <div class="max-w-96">
+            <gradient-text
+              bg_gradient_class="bg_gradient_text"
+              message="Spotlight"
+            />
+            <p class="text-6xl text-black">OUR</p>
+            <gradient-text
+              bg_gradient_class="bg_gradient_text"
+              message="Activity"
+            />
+            <p class="text-black font-semibold pt-5">
+              find out what we've been up to lately, there are plenty of other
+              activities waiting for you!
+            </p>
+            <button
+              class="rounded-full border-2 border-black py-2 px-5 mt-5 main-shadowbutton"
+            >
+              Explore All Activity
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="member py-20">
+      <div class="px-10">
+        <gradient-text bg_gradient_class="bg_gradient_text" message="Members" />
+      </div>
+      <div class="flex flex-wrap justify-center gap-10 px-10 mt-8">
+        <div
+          v-for="(person, index) in people"
+          :key="index"
+          class=""
+        >
+          <div
+            class="card-name main-shadowcardname border-2 border-black rounded-lg p-2 flex w-60 items-center justify-start"
+          >
+            <div>{{ index + 1 }}.</div>
+            <img
+              src="~/assets/img/img.jpg"
+              class="w-10 rounded-full mx-1"
+              alt="Foto"
+            />
+            <div class="flex flex-col justify-between ">
+              <div class="font-semibold">{{ person.name }}</div>
+              <div class="text-sm">{{ person.description }}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-color-custom-11 pl-10 py-20 about">
+      <div class="grid grid-cols-12 gap-8">
+        <div class="col-span-6">
+          <gradient-text
+            bg_gradient_class="bg_gradient_text2"
+            message="About"
+          />
+          <div class="grid grid-cols-12 mt-8">
+            <div class="col-span-6">
+              <img src="~/assets/img/img.jpg" alt="" srcset="" class="p-1" />
               <img
                 src="~/assets/img/img.jpg"
-                class="w-full"
-                style="
-                  border-top-left-radius: 30%;
-                  border-bottom-right-radius: 30%;
-                "
+                class="w-full h-36 p-1 object-cover"
                 alt=""
                 srcset=""
               />
             </div>
-          </div>
-          <div class="col-span-4 pt- flex justify-end">
-            <!-- <div class="grid grid-cols-12 h-full">
-              <div class="col-span-12 flex align-start px-4">
-                <img
-                  src="~/assets/img/img.jpg"
-                  class="w-full max-h-min rounded-full"
-                  alt=""
-                  srcset=""
-                />
-              </div>
-              <div class="col-span-12 flex items-end px-6">
-              
-              </div>
-            </div> -->
-            <div class="flex flex-col justify-between h-full"> 
-              <div class="flex justify-center">
-                <img
-                  src="~/assets/img/img.jpg"
-                  class="w-32 h-40 object-cover"
-                  style="border-top-left-radius: 30%"
-                  alt=""
-                  srcset=""
-                />
-              </div>
-              <div class="flex justify-center"></div>
-              <div class="flex justify-center">
-                <img
-                  src="~/assets/img/img.jpg"
-                  class="h-40 object-cover rounded-full"
-                  alt=""
-                  srcset=""
-                />
-              </div>
-              <div class="flex justify-center">
-                <img
-                  src="~/assets/img/img.jpg"
-                  class="w-32 h-40 object-cover rounded-bl-full rounded-br-full"
-                  alt=""
-                  srcset=""
-                />
-                <!-- </div> -->
-              </div>
+            <div class="col-span-6">
+              <img
+                src="~/assets/img/img.jpg"
+                class="w-full h-36 p-1 object-cover"
+                alt=""
+                srcset=""
+              />
+              <img src="~/assets/img/img.jpg" alt="" srcset="" class="p-1" />
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-    <div class="grid grid-cols-12">
-      <div class="col-span-8">
-        <div class="grid grid-cols-12">
-          <div class="col-span-6"></div>
-          <div class="col-span-6"></div>
-          <div class="col-span-6"></div>
-          <div class="col-span-6"></div>
+        <div class="col-span-6   items-center space-x-4 ">
+          <gradient-text
+            bg_gradient_class="bg_gradient_text3"
+            message="Welcome"
+          />
+          <span class="text-white font-semibold pt-5">
+            to RPL A! We are a group of Software Engineering students who love
+            technology and teamwork. In our class, we learn how to code, solve
+            problems, and work on exciting projects
+          </span>
+          <gradient-text
+          bg_gradient_class="bg_gradient_text3"
+          message="Together"
+          />
+          <span class="text-white font-semibold pt-5">
+            Each of us brings something different to the group, making RPL A a fun and creative place to learn. We’re not just classmates – we’re a team, helping each other grow and get ready for the future in 
+          </span>
+          <gradient-text
+          bg_gradient_class="bg_gradient_text3"
+          message="tech" />
         </div>
       </div>
-      <div class="col-span-4"></div>
     </div>
-    
+    <div class="footer  bg-color-custom-10 pt-20">
+      <div class=" bg-color-custom-11" style="border-top-right-radius:100px;border-top-left-radius:100px; ">
+        <div class=" pl-10 py-14">
+
+          <div class=" flex justify-center  items-center"> 
+            <div class="w-2/5">
+              <img src="~/assets/img/logo.png" class="mx-auto w-1/4 mb-4" alt="" srcset="">
+              <div class="flex justify-between">
+                <p class="text-white">Spotlight</p>
+                <p class="text-white ">Spotlight</p>
+                <p class="text-white">Spotlight</p>
+              </div>
+            </div>
+          </div>
+        </div> 
+        <div class="copyright bg-[#FFFFFF0A]  p-4">
+          <div class="text-center text-color-custom-10">© 2024 RPL A Class. All Rights Reserved.</div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -123,6 +304,158 @@ export default {
   data() {
     return {
       tes: "is",
+      people: [
+        {
+          name: "John Doe",
+          description: "College Student",
+          image: "~/assets/img/card1.png",
+        },
+        {
+          name: "Jane Smith",
+          description: "Software Engineer",
+          image: "~/assets/img/card2.png",
+        },
+        {
+          name: "Mike Johnson",
+          description: "Graphic Designer",
+          image: "~/assets/img/card3.png",
+        },
+        {
+          name: "Emily Davis",
+          description: "Marketing Specialist",
+          image: "~/assets/img/card4.png",
+        },
+        {
+          name: "Emily Davis",
+          description: "Marketing Specialist",
+          image: "~/assets/img/card4.png",
+        },
+        {
+          name: "John Doe",
+          description: "College Student",
+          image: "~/assets/img/card1.png",
+        },
+        {
+          name: "Jane Smith",
+          description: "Software Engineer",
+          image: "~/assets/img/card2.png",
+        },
+        {
+          name: "Mike Johnson",
+          description: "Graphic Designer",
+          image: "~/assets/img/card3.png",
+        },
+        {
+          name: "Emily Davis",
+          description: "Marketing Specialist",
+          image: "~/assets/img/card4.png",
+        },
+        {
+          name: "Emily Davis",
+          description: "Marketing Specialist",
+          image: "~/assets/img/card4.png",
+        },
+        {
+          name: "John Doe",
+          description: "College Student",
+          image: "~/assets/img/card1.png",
+        },
+        {
+          name: "Jane Smith",
+          description: "Software Engineer",
+          image: "~/assets/img/card2.png",
+        },
+        {
+          name: "Mike Johnson",
+          description: "Graphic Designer",
+          image: "~/assets/img/card3.png",
+        },
+        {
+          name: "Emily Davis",
+          description: "Marketing Specialist",
+          image: "~/assets/img/card4.png",
+        },
+        {
+          name: "Emily Davis",
+          description: "Marketing Specialist",
+          image: "~/assets/img/card4.png",
+        },
+        {
+          name: "John Doe",
+          description: "College Student",
+          image: "~/assets/img/card1.png",
+        },
+        {
+          name: "Jane Smith",
+          description: "Software Engineer",
+          image: "~/assets/img/card2.png",
+        },
+        {
+          name: "Mike Johnson",
+          description: "Graphic Designer",
+          image: "~/assets/img/card3.png",
+        },
+        {
+          name: "Emily Davis",
+          description: "Marketing Specialist",
+          image: "~/assets/img/card4.png",
+        },
+        {
+          name: "Emily Davis",
+          description: "Marketing Specialist",
+          image: "~/assets/img/card4.png",
+        },
+        {
+          name: "John Doe",
+          description: "College Student",
+          image: "~/assets/img/card1.png",
+        },
+        {
+          name: "Jane Smith",
+          description: "Software Engineer",
+          image: "~/assets/img/card2.png",
+        },
+        {
+          name: "Mike Johnson",
+          description: "Graphic Designer",
+          image: "~/assets/img/card3.png",
+        },
+        {
+          name: "Emily Davis",
+          description: "Marketing Specialist",
+          image: "~/assets/img/card4.png",
+        },
+        {
+          name: "Emily Davis",
+          description: "Marketing Specialist",
+          image: "~/assets/img/card4.png",
+        },
+        {
+          name: "John Doe",
+          description: "College Student",
+          image: "~/assets/img/card1.png",
+        },
+        {
+          name: "Jane Smith",
+          description: "Software Engineer",
+          image: "~/assets/img/card2.png",
+        },
+        {
+          name: "Mike Johnson",
+          description: "Graphic Designer",
+          image: "~/assets/img/card3.png",
+        },
+        {
+          name: "Emily Davis",
+          description: "Marketing Specialist",
+          image: "~/assets/img/card4.png",
+        },
+        {
+          name: "Emily Davis",
+          description: "Marketing Specialist",
+          image: "~/assets/img/card4.png",
+        },
+      ],
     };
   },
   methods: {
