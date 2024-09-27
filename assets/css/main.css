@@ -73,3 +73,34 @@ transition: transform 0.2s, box-shadow 0.2s;
     color: transparent;
     -webkit-text-fill-color: transparent; 
 }
+span .firstcustomLetter:first-letter {
+    font-size: 82px;
+}
+.redGradient{
+    
+    position: absolute;
+    z-index: 1;
+    top: -81px;
+    right: -316px;
+    width: 290px;
+    height: 344px;
+    box-shadow: 0px 0px 504px 0px #D23B3B;
+}
+.blueGradient{
+    box-shadow: 0px 0px 504px 0px #3B4AD2;
+    position: absolute;
+    z-index: 1;
+    top: -291px;
+    right: 524px;
+    width: 333px;
+    height: 277px;
+}
+.yellowGradient{
+    background-image:  transparent;
+    position: absolute; 
+    bottom: -150px;
+    right: -293px;
+    width: 290px;
+    height: 344px;
+    box-shadow: 0px 0px 504px 0px #D2A83B;
+}
