@@ -1,12 +1,13 @@
 <template>
   <div class="">
-    <div class="bg-color-custom-11 px-20 py-20 home" style="border-bottom-right-radius:300px ">
+    <Navbar />
+    <div class="bg-color-custom-11 xl:px-20 px-6  lg:px-20 py-20 home" style="border-bottom-right-radius:200px ">
       <div class="yellowGradient"></div>
       <div class="redGradient"></div>
       <div class="blueGradient"></div>
       
       <svg
-        class="absolute z-0 left-8"
+        class="absolute z-1 left-8"
         width="560"
         height="560"
         viewBox="0 0 560 560"
@@ -29,15 +30,13 @@
               bg_gradient_class="bg_gradient_text"
               message="Faces"
             />
-            <p class="text-6xl text-color-custom-10">Behind the</p>
+            <p class="xl:text-7xl lg:text-7xl text-5xl text-color-custom-10">Behind the</p>
             <gradient-text
               bg_gradient_class="bg_gradient_text"
               message="Future"
             />
-            <p class="mt-8 text-color-custom-10">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-              vitae corrupti aliquid beatae excepturi cum sed commodi
-              perspiciatis rem esse?
+            <p class="lg:mt-8 xl:mt-8 mt-4 text-md text-color-custom-10">
+              Explore our world of coding and collaboration. Meet future software engineers and the memories we're creating.
             </p>
             <button
               class="rounded-full text-xl mt-8 flex items-center bg-color-custom-10 p-3"
@@ -53,27 +52,27 @@
             </button>
           </div>
         </div>
-        <div class="xl:col-span-6 lg:col-span-6 md:col-span-6 col-span-12 xl:order-2 lg:order-2 md:order-2 order-1  p-6">
+        <div class="xl:col-span-6 lg:col-span-6 lg:mb-0 xl:mb-0 mb-6 md:col-span-6 col-span-12 xl:order-2 lg:order-2 md:order-2 order-1  xl:p-6 lg:p-6">
           <div class="grid grid-cols-12">
-            <div class="col-span-8 pt-2 flex justify-center align-center">
-              <div>
+            <div class="col-span-8 xl:pt-2 flex justify-center align-center">
+              <div class="z-30">
                 <div class="flex justify-between mb-8 ">
                   <img
                     src="~/assets/img/img.jpg"
-                    class="w-44 h-40 rounded-tl-full z-30 rounded-bl-full"
+                    class="lg:w-44 lg:h-40 xl:w-44 xl:h-40 h-28 rounded-tl-full rounded-bl-full"
                     alt=""
                     srcset=""
                   />
                   <img
                     src="~/assets/img/img.jpg"
-                    class="w-40 z-30 rounded-full"
+                    class="lg:w-40 xl:h-40 h-28 rounded-full"
                     alt=""
                     srcset=""
                   />
                 </div>
                 <img
                   src="~/assets/img/img.jpg"
-                  class="w-full z-30"
+                  class="lg:w-full xl:w-full w-48"
                   style="
                     border-top-left-radius: 30%;
                     border-bottom-right-radius: 30%;
@@ -84,11 +83,11 @@
               </div>
             </div>
             <div class="col-span-4 pt-x flex justify-end"> 
-              <div class="flex flex-col justify-between h-full">
+              <div class="flex flex-col justify-between lg:h-full">
                 <div class="flex justify-center">
                   <img
                     src="~/assets/img/img.jpg"
-                    class="w-32 z-30 h-40 object-cover"
+                    class="lg:w-32 xl:w-32 z-30 xl:h-40 lg:h-40 object-cover"
                     style="border-top-left-radius: 30%"
                     alt=""
                     srcset=""
@@ -98,7 +97,7 @@
                 <div class="flex justify-center">
                   <img
                     src="~/assets/img/img.jpg"
-                    class="h-40 z-30 object-cover rounded-full"
+                    class="lg:h-40 xl:h-40 h-28 z-30 object-cover rounded-full"
                     alt=""
                     srcset=""
                   />
@@ -106,7 +105,7 @@
                 <div class="flex justify-center">
                   <img
                     src="~/assets/img/img.jpg"
-                    class="w-32 z-30 h-40 object-cover rounded-bl-full rounded-br-full"
+                    class="xl:w-32 xl:h-40 lg:w-32 z-30 lg:h-40 object-cover rounded-bl-full rounded-br-full"
                     alt=""
                     srcset=""
                   />
@@ -118,11 +117,12 @@
         </div>
       </div>
     </div>
-    <div class="px-10 Activity pt-20 z-10">
+    <div class="xl:px-20 px-6  lg:px-20 Activity pt-20 z-10">
       <div class="grid grid-cols-12">
-        <div class=" xl:col-span-7 lg:col-span-7 md:col-span-7 col-span-12   ">
+        <div class=" xl:col-span-7 lg:col-span-7 md:col-span-7 col-span-12">
+          
           <div class="grid grid-cols-12 gap-4">
-            <div class="col-span-6">
+            <div class="col-span-6 ">
               <div class="card main-shadow bg-color-custom-9 rounded-xl">
                 <img
                   src="~/assets/img/card1.png"
@@ -177,17 +177,17 @@
           </div>
         </div>
         <div class="xl:col-span-5 lg:col-span-5 md:col-span-5 col-span-12 lg:mt-0 xl:mt-0 md:mt-0 mt-6  flex justify-center">
-          <div class="max-w-96">
+          <div class="max-w-80">
             <gradient-text
               bg_gradient_class="bg_gradient_text"
               message="Spotlight"
             />
-            <p class="text-6xl text-black">OUR</p>
+            <p class="xl:text-7xl lg:text-7xl text-5xl   text-black">Our</p>
             <gradient-text
               bg_gradient_class="bg_gradient_text"
               message="Activity"
             />
-            <p class="text-black font-semibold pt-5">
+            <p class="text-black font-thin text-md pt-5">
               find out what we've been up to lately, there are plenty of other
               activities waiting for you!
             </p>
@@ -201,17 +201,17 @@
       </div>
     </div>
     <div class="member py-20">
-      <div class="px-10">
+      <div class="xl:px-20 px-6  lg:px-20">
         <gradient-text bg_gradient_class="bg_gradient_text" message="Members" />
       </div>
-      <div class="flex flex-wrap justify-center gap-10 px-10 mt-8">
+      <div class="flex flex-wrap justify-center gap-10 xl:px-20 px-6  lg:px-20 mt-8">
         <div
           v-for="(person, index) in people"
           :key="index"
           class=""
         >
           <div
-            class="card-name main-shadowcardname border-2 border-black rounded-lg p-2 flex w-60 items-center justify-start"
+            class="card-name main-shadowcardname border-2 border-black rounded-lg p-2 flex xl:w-60 lg:w-60 md:w-60 w-60 items-center justify-start"
           >
             <div>{{ index + 1 }}.</div>
             <img
@@ -227,12 +227,12 @@
         </div>
       </div>
     </div>
-    <div class="bg-color-custom-11 xl:px-10 px-6 *:lg:px-10 py-20 about">
+    <div class="bg-color-custom-11 xl:px-20 px-6  lg:px-20 py-20 about">
       <gradient-text
         bg_gradient_class="bg_gradient_text2"
         message="About"
       />
-      <div class="grid grid-cols-12 mt-8 gap-8">
+      <div class="grid grid-cols-12 mt-8 xl:gap-8 lg:gap-8 gap-4">
         <div class="xl:col-span-6 lg:col-span-6 md:col-span-6 col-span-12  ">
           <div class="grid grid-cols-12  ">
             <div class="col-span-6">
@@ -255,18 +255,18 @@
             </div>
           </div>
         </div>
-        <div class="xl:col-span-4 lg:col-span-4 xl:col-start-8 lg:col-start-8 col-span-12">
+        <div class="xl:col-span-4 lg:col-span-4 md:col-span-4 md:col-start-8 xl:col-start-8 lg:col-start-8 col-span-12">
         <div class=" w-">
-          <p class="text-white font-semibold pt-5" > 
-            <span :class="['text-6xl', 'bg_gradient_text3', 'font-semibold']">Welcome</span> 
+          <p class="text-white font-thin text-md pt-5" > 
+            <span :class="['xl:text-7xl lg:text-7xl text-5xl', 'bg_gradient_text3', 'font-semibold']">Welcome</span> 
             to RPL A! We are a group of Software Engineering students who love
             technology and teamwork. In our class, we learn how to code, solve
             problems, and work on exciting projects 
-            <span :class="['text-6xl', 'bg_gradient_text3', 'font-semibold']">together</span> 
+            <span :class="['xl:text-7xl lg:text-7xl text-5xl', 'bg_gradient_text3', 'font-semibold']">together</span> 
           </p> 
-          <p class="text-white font-semibold pt-5">
+          <p class="text-white font-thin text-md pt-5">
             Each of us brings something different to the group, making RPL A a fun and creative place to learn. We’re not just classmates – we’re a team, helping each other grow and get ready for the future in 
-            <span :class="['text-6xl', 'bg_gradient_text3', 'font-semibold']">tech</span> 
+            <span :class="['xl:text-7xl lg:text-7xl text-5xl', 'bg_gradient_text3', 'font-semibold']">tech</span> 
           </p> 
         </div>
         </div>

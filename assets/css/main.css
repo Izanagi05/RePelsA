@@ -84,10 +84,14 @@ span .firstcustomLetter:first-letter {
     right: -316px;
     width: 290px;
     height: 344px;
+    background-color: #D23B3B;
+    filter: blur(140px);
     box-shadow: 0px 0px 504px 0px #D23B3B;
 }
 .blueGradient{
     box-shadow: 0px 0px 504px 0px #3B4AD2;
+    background-color: #3B4AD2;
+    filter: blur(140px);
     position: absolute;
     z-index: 1;
     top: -291px;
@@ -96,6 +100,7 @@ span .firstcustomLetter:first-letter {
     height: 277px;
 }
 .yellowGradient{
+    z-index: 1;
     background-image:  transparent;
     position: absolute; 
     bottom: -150px;
@@ -103,4 +108,6 @@ span .firstcustomLetter:first-letter {
     width: 290px;
     height: 344px;
     box-shadow: 0px 0px 504px 0px #D2A83B;
+    background-color: #D2A83B;
+    filter: blur(140px);
 }

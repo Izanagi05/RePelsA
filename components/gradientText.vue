@@ -1,6 +1,6 @@
 <template>
   <div>
-    <span :class="['text-7xl', bg_gradient_class, 'font-semibold']">{{message}}</span>
+    <span :class="['xl:text-7xl lg:text-7xl text-5xl', bg_gradient_class, 'font-bold']">{{message}}</span>
   </div>
 </template>
 <script>
