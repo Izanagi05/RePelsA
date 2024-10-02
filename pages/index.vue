@@ -23,7 +23,7 @@
           stroke-width="80"
         />
       </svg>
-      <div class="grid grid-cols-12">
+      <div class="grid grid-cols-12 overflow-x-hidden">
         <div class="xl:col-span-6 lg:col-span-6 md:col-span-6 col-span-12 xl:order-1 lg:order-1 md:order-1 order-2 z-10 h-full flex justify-start items-end">
           <div class="w-4/5">
             <gradient-text
@@ -211,7 +211,8 @@
           class=""
         >
           <div
-            class="card-name main-shadowcardname border-2 border-black rounded-lg p-2 flex xl:w-60 lg:w-60 md:w-60 w-60 items-center justify-start"
+            class="card-name main-shadowcardname border-2 border-black rounded-lg p-2 flex xl:w-60 lg:w-60 md:w-60 w-60
+             items-center justify-start"
           >
             <div>{{ index + 1 }}.</div>
             <img
