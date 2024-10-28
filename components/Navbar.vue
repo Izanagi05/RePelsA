@@ -1,16 +1,7 @@
 !<template>
   <div>
   <div :class="isActive ? 'menu menuactivembl pt-0' : 'menu pt-0'">
-    <div class="text-end pr-6 pt-6 ">
-      <button id="menu" @click="isActive=!isActive"
-    class="relative ml-auto h-6 max-h-[40px] w-6 max-w-[40px] select-none rounded-lg text-center align-middle text-xs font-medium uppercase text-inherit transition-all hover:bg-transparent focus:bg-transparent active:bg-transparent disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none lg:hidden"
-    type="button">
-    <span class="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
-      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" stroke="#ffffff" stroke-width="2">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
-      </svg>
-    </span>
-  </button>
+    <div class="text-end pr-6 pt-6 "> 
     </div>
     <ul class="mt-6">
     <li class="nav-itemmb "><a class="nxlink text-white text-decoration-none" href="#home"  @click="isActive=!isActive">Home</a></li>
@@ -20,11 +11,10 @@
 
   </ul>
 </div>
-  <div class="w-full    bg-transparent bg-opacity-90 fixed  top-0 shadow lg:px-20 lg:py-3 z-[9999]">
+  <div class="w-full    bg-transparent bg-black bg-opacity-30 fixed  top-0 shadow xl:px-20 xl:py-3 px-6 py-2   lg:px-20 lg:py-3 z-[9999]">
     <nav class=" ">
   <div class="container flex flex-wrap items-center justify-between mx-auto ">
     <div class=" flex items-center justify-start">
-
         <img src="~/assets/img/logo.png" class="w-10 object-cover" alt="" srcset="">
         <a href="#"
         class="mr-4 block cursor-pointer  text-color-custom-10 py-1.5 font-semibold">

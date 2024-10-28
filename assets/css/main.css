@@ -60,14 +60,15 @@ transition: transform 0.2s, box-shadow 0.2s;
 }
 .bg_gradient_text2{
     background: linear-gradient(90deg, #F5DE9B -18.22%, #9335FF 51.81%, #7986FE 121.84%);
-
+    
     background-clip: text;
     -webkit-background-clip: text; 
     color: transparent;
     -webkit-text-fill-color: transparent; 
 }
-.bg_gradient_text3{
-    background: url('~/assets/img/bg-gradientabout.png');
+.bg_gradient_text3{ 
+    /* background: url('~/assets/img/bg-gradientabout.png'); */
+    background: linear-gradient(90deg, #E069DC 45%, #7BBEF7 70%, #F5DE9B 85%);
 
     background-clip: text;
     -webkit-background-clip: text; 

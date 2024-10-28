@@ -1,6 +1,10 @@
 <template>
   <div class="">
     <Navbar />
+    
+    <modal :dataCollegeStudent="dataCollegeStudent" isClose="isClose" :isOpen="isOpen" />
+   
+
     <div class="bg-color-custom-11 xl:px-20 px-6  lg:px-20 py-20 home" style="border-bottom-right-radius:200px ">
       <div class="yellowGradient"></div>
       <div class="redGradient"></div>
@@ -38,18 +42,21 @@
             <p class="lg:mt-8 xl:mt-8 mt-4 text-md text-color-custom-10">
               Explore our world of coding and collaboration. Meet future software engineers and the memories we're creating.
             </p>
-            <button
+            <a href="https://www.instagram.com/softwareengineer1a" target="_blank" rel="noopener noreferrer">
+
+              <button 
               class="rounded-full text-xl mt-8 flex items-center bg-color-custom-10 p-3"
-            >
+              >
               Our Instagram
               <span class="ml-2 p-2 rounded-full icon_ig"
-                ><img
-                  src="~/assets/img/svg/ig.svg"
-                  alt=""
-                  class="w-5"
-                  srcset=""
+              ><img
+              src="~/assets/img/svg/ig.svg"
+              alt=""
+              class="w-5"
+              srcset=""
               /></span>
             </button>
+          </a>
           </div>
         </div>
         <div class="xl:col-span-6 lg:col-span-6 lg:mb-0 xl:mb-0 mb-6 md:col-span-6 col-span-12 xl:order-2 lg:order-2 md:order-2 order-1  xl:p-6 lg:p-6">
@@ -210,9 +217,9 @@
           :key="index"
           class=""
         >
+          
           <div
-            class="card-name main-shadowcardname border-2 border-black rounded-lg p-2 flex xl:w-60 lg:w-60 md:w-60 w-60
-             items-center justify-start"
+            class="card-name main-shadowcardname border-2 border-black rounded-lg p-2 flex xl:w-60 lg:w-60 md:w-60 w-60 items-center justify-start" @click="openModal(person)"
           >
             <div>{{ index + 1 }}.</div>
             <img
@@ -273,13 +280,13 @@
         </div>
       </div>
     </div>
-    <div class="footer  bg-color-custom-10 pt-20">
-      <div class=" bg-color-custom-11" style="border-top-right-radius:100px;border-top-left-radius:100px; ">
-        <div class="xl:py-14 lg:py-14 py-4">
+    <div class="footer  bg-color-custom-10 w-full pt-20">
+      <div class=" bg-color-custom-11 w-full rounded-tl-[50px] rounded-tr-[50px] lg:rounded-tl-[100px] lg:rounded-tr-[100px] xl:rounded-tl-[100px] xl:rounded-tr-[100px]" >
+        <div class="xl:py-14 lg:py-14 py-4 w-full">
           <div class=" flex justify-center  items-center"> 
             <div class="w-2/5">
-              <img src="~/assets/img/logo.png" class="mx-auto w-1/4 " alt="" srcset="">
-              <div class="flex justify-between xl:my-6 my-4 lg:my-6">
+              <img src="~/assets/img/logo.png" class="mx-auto w-1/5 " alt="" srcset="">
+              <div class="flex justify-between xl:mb-2 mb-2 lg:mb-2">
                 <p class="text-white">Spotlight</p>
                 <p class="text-white ">Member</p>
                 <p class="text-white">About</p>
@@ -288,7 +295,7 @@
           </div>
           <img src="~/assets/img/2.png" class="w-10 mx-auto" alt="" srcset="">
         </div> 
-        <div class="copyright bg-[#FFFFFF0A]  p-4">
+        <div class="copyright bg-[#FFFFFF0A] w-full  p-4">
           <div class="text-center text-color-custom-10">© 2024 RPL A Class. All Rights Reserved.</div>
         </div>
       </div>
@@ -303,6 +310,8 @@ export default {
   data() {
     return {
       tes: "is",
+      isOpen:true,
+      dataCollegeStudent:null,
       people: [
         {
           name: "John Doe",
@@ -461,6 +470,16 @@ export default {
     tess() {
       this.tes = "hayy";
       console.log(this.tess);
+    },
+  },
+  methods: {
+    openModal(person) {
+      this.isOpen=true
+      this.dataCollegeStudent= Object.assign({}, person)
+      const modal = document.getElementById("my_modal_1");
+      if (modal) {
+        modal.showModal();
+      }
     },
   },
 };
