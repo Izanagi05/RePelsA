@@ -105,11 +105,34 @@ span .firstcustomLetter:first-letter {
     z-index: 1;
     background-image:  transparent;
     position: absolute; 
-    bottom: -150px;
-    right: -293px;
     width: 290px;
     height: 344px;
     box-shadow: 0px 0px 504px 0px #D2A83B;
     background-color: #D2A83B;
     filter: blur(140px);
+}
+
+.redAboutGradient{
+    z-index: 1;
+    background-image:  transparent;
+    position: absolute; 
+   
+    width: 290px;
+    height: 344px;
+    box-shadow: 0px 0px 504px 0px #D23B3B;
+    background-color: #D23B3B;
+    filter: blur(140px);
+    
+}
+.blueAboutGradient{
+    z-index: 1;
+    background-image:  transparent;
+    position: absolute; 
+    
+    width: 290px;
+    height: 344px;
+    box-shadow: 0px 0px 504px 0px #3B4AD2;
+    background-color: #3B4AD2;
+    filter: blur(140px);
+    
 }
