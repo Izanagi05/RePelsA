@@ -1,7 +1,5 @@
 <template>
-  <div>
-    <!-- Open the modal using ID.showModal() method -->
-    <!-- <button class="btn" @click="openModal">open modal</button> -->
+  <div> 
     <dialog id="my_modal_1" class="modal" v-if="isOpen">
       <div class="modal-box   xl:max-w-[25%] lg:max-w-[25%] md:max-w-[35%] w-8/12   h-auto">
         <div class="">
@@ -31,9 +29,9 @@
         <p class="text-2xl font-semibold">{{dataCollegeStudent?.name}}</p>
         <p class="text-sm font-regular text-gray">{{dataCollegeStudent?.description}}</p>
         <div class="flex items-center mt-2 gap-1">
-          <img src="~/assets/img/2-1.png" class="w-8 rounded-full" alt="" srcset="" />
-          <img src="~/assets/img/3.png" class="w-8 rounded-full" alt="" srcset="" />
-          <img src="~/assets/img/1.png" class="w-8 rounded-full" alt="" srcset="" />
+          <img src="~/assets/img/2-1.png" class="w-8 rounded-full" alt="rpl a" srcset="" />
+          <img src="~/assets/img/3.png" class="w-8 rounded-full" alt="rpl a" srcset="" />
+          <img src="~/assets/img/1.png" class="w-8 rounded-full" alt="rpl a" srcset="" />
         </div>
         
       </div>

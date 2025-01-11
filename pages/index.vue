@@ -360,190 +360,291 @@
     </div>
    <footerRepels />
   </div>
-</template>
-
-<script>
+</template> 
+<script setup lang="ts"> 
 import footerRepels from "~/components/footerRepels.vue";
 import gradientText from "~/components/gradientText.vue";
-export default {
-  components: { gradientText, footerRepels },
-  data() {
-    return {
-      tes: "is",
-      isOpen: true,
-      dataCollegeStudent: null,
-      people: [
-        {
-          name: "John Doe",
-          description: "College Student",
-          image: "~/assets/img/card1.png",
-        },
-        {
-          name: "Jane Smith",
-          description: "Software Engineer",
-          image: "~/assets/img/card2.png",
-        },
-        {
-          name: "Mike Johnson",
-          description: "Graphic Designer",
-          image: "~/assets/img/card3.png",
-        },
-        {
-          name: "Emily Davis",
-          description: "Marketing Specialist",
-          image: "~/assets/img/card4.png",
-        },
-        {
-          name: "Emily Davis",
-          description: "Marketing Specialist",
-          image: "~/assets/img/card4.png",
-        },
-        {
-          name: "John Doe",
-          description: "College Student",
-          image: "~/assets/img/card1.png",
-        },
-        {
-          name: "Jane Smith",
-          description: "Software Engineer",
-          image: "~/assets/img/card2.png",
-        },
-        {
-          name: "Mike Johnson",
-          description: "Graphic Designer",
-          image: "~/assets/img/card3.png",
-        },
-        {
-          name: "Emily Davis",
-          description: "Marketing Specialist",
-          image: "~/assets/img/card4.png",
-        },
-        {
-          name: "Emily Davis",
-          description: "Marketing Specialist",
-          image: "~/assets/img/card4.png",
-        },
-        {
-          name: "John Doe",
-          description: "College Student",
-          image: "~/assets/img/card1.png",
-        },
-        {
-          name: "Jane Smith",
-          description: "Software Engineer",
-          image: "~/assets/img/card2.png",
-        },
-        {
-          name: "Mike Johnson",
-          description: "Graphic Designer",
-          image: "~/assets/img/card3.png",
-        },
-        {
-          name: "Emily Davis",
-          description: "Marketing Specialist",
-          image: "~/assets/img/card4.png",
-        },
-        {
-          name: "Emily Davis",
-          description: "Marketing Specialist",
-          image: "~/assets/img/card4.png",
-        },
-        {
-          name: "John Doe",
-          description: "College Student",
-          image: "~/assets/img/card1.png",
-        },
-        {
-          name: "Jane Smith",
-          description: "Software Engineer",
-          image: "~/assets/img/card2.png",
-        },
-        {
-          name: "Mike Johnson",
-          description: "Graphic Designer",
-          image: "~/assets/img/card3.png",
-        },
-        {
-          name: "Emily Davis",
-          description: "Marketing Specialist",
-          image: "~/assets/img/card4.png",
-        },
-        {
-          name: "Emily Davis",
-          description: "Marketing Specialist",
-          image: "~/assets/img/card4.png",
-        },
-        {
-          name: "John Doe",
-          description: "College Student",
-          image: "~/assets/img/card1.png",
-        },
-        {
-          name: "Jane Smith",
-          description: "Software Engineer",
-          image: "~/assets/img/card2.png",
-        },
-        {
-          name: "Mike Johnson",
-          description: "Graphic Designer",
-          image: "~/assets/img/card3.png",
-        },
-        {
-          name: "Emily Davis",
-          description: "Marketing Specialist",
-          image: "~/assets/img/card4.png",
-        },
-        {
-          name: "Emily Davis",
-          description: "Marketing Specialist",
-          image: "~/assets/img/card4.png",
-        },
-        {
-          name: "John Doe",
-          description: "College Student",
-          image: "~/assets/img/card1.png",
-        },
-        {
-          name: "Jane Smith",
-          description: "Software Engineer",
-          image: "~/assets/img/card2.png",
-        },
-        {
-          name: "Mike Johnson",
-          description: "Graphic Designer",
-          image: "~/assets/img/card3.png",
-        },
-        {
-          name: "Emily Davis",
-          description: "Marketing Specialist",
-          image: "~/assets/img/card4.png",
-        },
-        {
-          name: "Emily Davis",
-          description: "Marketing Specialist",
-          image: "~/assets/img/card4.png",
-        },
-      ],
-    };
+interface Person {
+  name: string;
+  description: string;
+  image: string;
+} 
+useHead({
+  title: "REPELS A 17 - Landing Page",
+  meta: [
+    { name: "description", content: "Halaman utama REPELS A 17" },
+    { property: "og:title", content: "REPELS A 17 - Landing Page" },
+    { property: "og:description", content: "Selamat datang di halaman utama REPELS A 17!" },
+    { property: "og:image", content: "https://repels-a.vercel.app/_nuxt/img/bgawal.f2374ae.jpg" },
+    { property: "og:url", content: "https://repels-a.vercel.app/" },
+    { property: "twitter:title", content: "REPELS A 17 - Landing Page" },
+    { property: "twitter:description", content: "Selamat datang di halaman utama REPELS A 17!" },
+    { property: "twitter:image", content: "https://repels-a.vercel.app/_nuxt/img/bgawal.f2374ae.jpg" },
+    { property: "twitter:url", content: "https://repels-a.vercel.app/" },
+  ],
+  link: [{ rel: "canonical", href: "https://repels-a.vercel.app/" }],
+}); 
+const tes = ref("is");
+const isOpen = ref(false);
+const dataCollegeStudent = ref<Person | null>(null);
+const people = ref<Person[]>([
+  {
+    name: "Laela",
+    description: "Repels A",
+    image: "~/assets/img/card1.png",
+    ig:'',
+    tt:'',
+    ld:'',
   },
-  methods: {
-    tess() {
-      this.tes = "hayy";
-      console.log(this.tess);
-    },
+  {
+    name: "Satria",
+    description: "Repels A",
+    image: "~/assets/img/card2.png",
+    ig:'',
+    tt:'',
+    ld:'',
   },
-  methods: {
-    openModal(person) {
-      this.isOpen = true;
-      this.dataCollegeStudent = Object.assign({}, person);
-      const modal = document.getElementById("my_modal_1");
-      if (modal) {
-        modal.showModal();
-      }
-    },
+  {
+    name: "Faiz",
+    description: "Repels A",
+    image: "~/assets/img/card3.png",
+    ig:'',
+    tt:'',
+    ld:'',
   },
-};
-</script>
+  {
+    name: "Naufal",
+    description: "Repels A",
+    image: "~/assets/img/card4.png",
+    ig:'',
+    tt:'',
+    ld:'',
+  },
+  {
+    name: "Ilham",
+    description: "Repels A",
+    image: "~/assets/img/card4.png",
+    ig:'',
+    tt:'',
+    ld:'',
+  },
+  {
+    name: "Daffa",
+    description: "Repels A",
+    image: "~/assets/img/card1.png",
+    ig:'',
+    tt:'',
+    ld:'',
+  },
+  {
+    name: "Elsa",
+    description: "Repels A",
+    image: "~/assets/img/card2.png",
+    ig:'',
+    tt:'',
+    ld:'',
+  },
+  {
+    name: "Advent",
+    description: "Repels A",
+    image: "~/assets/img/card3.png",
+    ig:'',
+    tt:'',
+    ld:'',
+  },
+  {
+    name: "Fadil",
+    description: "Repels A",
+    image: "~/assets/img/card4.png",
+    ig:'',
+    tt:'',
+    ld:'',
+  },
+  {
+    name: "Yuni",
+    description: "Repels A",
+    image: "~/assets/img/card4.png",
+    ig:'',
+    tt:'',
+    ld:'',
+  },
+  {
+    name: "Sunan",
+    description: "Repels A",
+    image: "~/assets/img/card1.png",
+    ig:'',
+    tt:'',
+    ld:'',
+  },
+  {
+    name: "Ai",
+    description: "Repels A",
+    image: "~/assets/img/card2.png",
+    ig:'',
+    tt:'',
+    ld:'',
+  },
+  {
+    name: "Irfan",
+    description: "Repels A",
+    image: "~/assets/img/card3.png",
+    ig:'',
+    tt:'',
+    ld:'',
+  },
+  {
+    name: "Tsabita",
+    description: "Repels A",
+    image: "~/assets/img/card4.png",
+    ig:'',
+    tt:'',
+    ld:'',
+  },
+  {
+    name: "Afif",
+    description: "Repels A",
+    image: "~/assets/img/card4.png",
+    ig:'',
+    tt:'',
+    ld:'',
+  },
+  {
+    name: "Hilmi",
+    description: "Repels A",
+    image: "~/assets/img/card1.png",
+    ig:'',
+    tt:'',
+    ld:'',
+  },
+  {
+    name: "Fadhlu",
+    description: "Repels A",
+    image: "~/assets/img/card2.png",
+    ig:'',
+    tt:'',
+    ld:'',
+  },
+  {
+    name: "Adam",
+    description: "Repels A",
+    image: "~/assets/img/card3.png",
+    ig:'',
+    tt:'',
+    ld:'',
+  },
+  {
+    name: "Rayen",
+    description: "Repels A",
+    image: "~/assets/img/card4.png",
+    ig:'',
+    tt:'',
+    ld:'',
+  },
+  {
+    name: "Iza",
+    description: "Repels A",
+    image: "~/assets/img/card4.png",
+    ig:'',
+    tt:'',
+    ld:'',
+  },
+  {
+    name: "Sakhi",
+    description: "Repels A",
+    image: "~/assets/img/card1.png",
+    ig:'',
+    tt:'',
+    ld:'',
+  },
+  {
+    name: "Nabil",
+    description: "Repels A",
+    image: "~/assets/img/card2.png",
+    ig:'',
+    tt:'',
+    ld:'',
+  },
+  {
+    name: "Galih",
+    description: "Repels A",
+    image: "~/assets/img/card3.png",
+    ig:'',
+    tt:'',
+    ld:'',
+  },
+  {
+    name: "Iqbal",
+    description: "Repels A",
+    image: "~/assets/img/card4.png",
+    ig:'',
+    tt:'',
+    ld:'',
+  },
+  {
+    name: "Dinda",
+    description: "Repels A",
+    image: "~/assets/img/card4.png",
+    ig:'',
+    tt:'',
+    ld:'',
+  },
+  {
+    name: "Maya",
+    description: "Repels A",
+    image: "~/assets/img/card1.png",
+    ig:'',
+    tt:'',
+    ld:'',
+  },
+  {
+    name: "Faisal",
+    description: "Repels A",
+    image: "~/assets/img/card2.png",
+    ig:'',
+    tt:'',
+    ld:'',
+  },
+  {
+    name: "Fariz",
+    description: "Repels A",
+    image: "~/assets/img/card3.png",
+    ig:'',
+    tt:'',
+    ld:'',
+  },
+  {
+    name: "Nisa",
+    description: "Repels A",
+    image: "~/assets/img/card4.png",
+    ig:'',
+    tt:'',
+    ld:'',
+  },
+  {
+    name: "Ajeng",
+    description: "Repels A",
+    image: "~/assets/img/card4.png",
+    ig:'',
+    tt:'',
+    ld:'',
+  },
+]);
+
+// Methods
+function tess(): void {
+  tes.value = "hayy";
+  console.log(tes.value);
+}
+
+function openModal(person: Person): void {
+  isOpen.value = true;
+  dataCollegeStudent.value = { ...person };
+  const modal = document.getElementById("my_modal_1") as HTMLDialogElement;
+  if (modal) {
+    modal.showModal();
+  }
+}
+</script> 
 
 <style>
 </style>

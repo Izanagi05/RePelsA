@@ -1,8 +1,8 @@
 body{overflow-x: hidden;}
 @font-face {
     font-family: 'Poppins';
-    src: url('~assets/fonts/Poppins/Poppins-SemiBold.ttf') format('truetype'),
-        url('~assets/fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+    src: url('~/assets/fonts/Poppins/Poppins-SemiBold.ttf') format('truetype'),
+        url('~/assets/fonts/Poppins/Poppins-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
   }
@@ -14,13 +14,16 @@ body{overflow-x: hidden;}
 .bg{
     background-color: red;
 }
+.bg-black-custom{
+    background-color: rgba(0, 0, 0, 0.3); 
+    transition: opacity 2s ease-in-out, background-color 2s ease-in-out;
+}
 .main-shadow{
     box-shadow: 8px 8px 0px 0px rgba(0,0,0,1);
 -webkit-box-shadow: 8px 8px 0px 0px rgba(0,0,0,1);
 -moz-box-shadow: 8px 8px 0px 0px rgba(0,0,0,1);
 transition: transform 0.2s, box-shadow 0.2s;
 }
-
 .main-shadow:active {
     transform: translate(2px, 2px);  
     box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 1); 
@@ -31,7 +34,6 @@ transition: transform 0.2s, box-shadow 0.2s;
 -moz-box-shadow: 3px 3px 0px 0px rgba(0,0,0,1);
 transition: transform 0.2s, box-shadow 0.2s;
 }
-
 .main-shadowcardname:active {
     transform: translate(2px, 2px); 
     box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 1); 
@@ -42,7 +44,6 @@ transition: transform 0.2s, box-shadow 0.2s;
 -moz-box-shadow: 3px 3px 0px 0px rgba(0,0,0,1);
 transition: transform 0.2s, box-shadow 0.2s;
 }
-
 .main-shadowbutton:active {
     transform: translate(2px, 2px); 
     box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 1); 
@@ -60,16 +61,13 @@ transition: transform 0.2s, box-shadow 0.2s;
 }
 .bg_gradient_text2{
     background: linear-gradient(90deg, #F5DE9B -18.22%, #9335FF 51.81%, #7986FE 121.84%);
-    
     background-clip: text;
     -webkit-background-clip: text; 
     color: transparent;
     -webkit-text-fill-color: transparent; 
 }
-.bg_gradient_text3{ 
-    /* background: url('~/assets/img/bg-gradientabout.png'); */
+.bg_gradient_text3{  
     background: linear-gradient(90deg, #E069DC 45%, #7BBEF7 70%, #F5DE9B 85%);
-
     background-clip: text;
     -webkit-background-clip: text; 
     color: transparent;
@@ -79,7 +77,6 @@ span .firstcustomLetter:first-letter {
     font-size: 82px;
 }
 .redGradient{
-    
     position: absolute;
     z-index: 1;
     top: -81px;
@@ -111,12 +108,10 @@ span .firstcustomLetter:first-letter {
     background-color: #D2A83B;
     filter: blur(140px);
 }
-
 .redAboutGradient{
     z-index: 1;
     background-image:  transparent;
     position: absolute; 
-   
     width: 290px;
     height: 344px;
     box-shadow: 0px 0px 504px 0px #D23B3B;

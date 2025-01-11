@@ -33,13 +33,5 @@
       </div>
     </div> 
 </template>
-
-<script>
-export default {
-
-}
-</script>
-
-<style>
-
-</style>
+<script lang="ts"> 
+</script> 
