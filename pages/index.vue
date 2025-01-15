@@ -1,48 +1,66 @@
 <template>
-  <div class="bg-custom-10" style="overflow-x: hidden;">
+  <div class="bg-custom-10" style="overflow-x: hidden">
     <Navbar />
     <dialog id="my_modal_1" class="modal" v-if="isOpen">
-      <div class="modal-box   xl:max-w-[25%] lg:max-w-[25%] md:max-w-[35%] w-8/12   h-auto">
+      <div
+        class="modal-box xl:max-w-[25%] lg:max-w-[25%] md:max-w-[35%] w-8/12 h-auto"
+      >
         <div class="">
-            <div class="flex justify-end items-center">
-                <form method="dialog"> 
-          <button class="">
-            <svg
-              class="swap-on fill-current"
-              xmlns="http://www.w3.org/2000/svg"
-              width="32"
-              height="32"
-              viewBox="0 0 512 512"
-            >
-              <polygon
-                points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49"
-              />
-            </svg>
-          </button>
-        </form>
-    </div>
-    <img
-          src="~/assets/img/img.webp"
-          class="w-full rounded-xl mx-1"
-          alt="Foto anggota RPL A"
-        />
-        <p class="text-2xl font-semibold">{{dataCollegeStudent?.name}}</p>
-        <p class="text-sm font-regular text-gray">{{dataCollegeStudent?.description}}</p>
-        <div class="flex items-center mt-2 gap-1">
-          <img src="~/assets/img/2.webp" class="w-8 rounded-full" alt="Foto anggota RPL A" srcset="" />
-          <img src="~/assets/img/3.webp" class="w-8 rounded-full" alt="Foto anggota RPL A" srcset="" />
-          <img src="~/assets/img/1.webp" class="w-8 rounded-full" alt="Foto anggota RPL A" srcset="" />
+          <div class="flex justify-end items-center">
+            <form method="dialog">
+              <button class="">
+                <svg
+                  class="swap-on fill-current"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 512 512"
+                >
+                  <polygon
+                    points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49"
+                  />
+                </svg>
+              </button>
+            </form>
+          </div>
+          <img
+            src="~/assets/img/img.webp"
+            class="w-full rounded-xl mx-1"
+            alt="Foto anggota RPL A"
+          />
+          <p class="text-2xl font-semibold">{{ dataCollegeStudent?.name }}</p>
+          <p class="text-sm font-regular text-gray">
+            {{ dataCollegeStudent?.description }}
+          </p>
+          <div class="flex items-center mt-2 gap-1">
+            <img
+              src="~/assets/img/2.webp"
+              class="w-8 rounded-full"
+              alt="Foto anggota RPL A"
+              srcset=""
+            />
+            <img
+              src="~/assets/img/3.webp"
+              class="w-8 rounded-full"
+              alt="Foto anggota RPL A"
+              srcset=""
+            />
+            <img
+              src="~/assets/img/1.webp"
+              class="w-8 rounded-full"
+              alt="Foto anggota RPL A"
+              srcset=""
+            />
+          </div>
         </div>
       </div>
-    </div>
     </dialog>
 
     <div
       class="bg-color-custom-11 xl:px-20 relative px-6 lg:px-20 py-20 home"
       style="border-bottom-right-radius: 200px"
     >
-      <div class="yellowGradient" style="bottom: -150px;
-    right: -293px;"></div>
+      <div class="yellowGradient" style="bottom: -150px; right: -293px"></div>
       <div class="redGradient"></div>
       <div class="blueGradient"></div>
 
@@ -170,7 +188,9 @@
         </div>
       </div>
     </div>
-    <div class="xl:px-20 px-6 lg:px-20 Activity relative bg-color-custom-10 z-20 py-20 z-10">
+    <div
+      class="xl:px-20 px-6 lg:px-20 Activity relative bg-color-custom-10 z-20 py-20 z-10"
+    >
       <div class="grid grid-cols-12">
         <div class="xl:col-span-7 lg:col-span-7 md:col-span-7 col-span-12">
           <div class="grid grid-cols-12 gap-4">
@@ -315,18 +335,20 @@
         />
       </svg>
 
-      <div class="yellowGradient" style="top: -300px;
-    right: 50%;"></div>
-      <div class="blueAboutGradient" style=" bottom: -150px;
-    left: -293px;"></div>
-      <div class="redAboutGradient" style=" bottom: -150px;
-    right: -293px;"></div>
+      <div class="yellowGradient" style="top: -300px; right: 50%"></div>
+      <div class="blueAboutGradient" style="bottom: -150px; left: -293px"></div>
+      <div class="redAboutGradient" style="bottom: -150px; right: -293px"></div>
       <gradient-text bg_gradient_class="bg_gradient_text2" message="About" />
       <div class="grid grid-cols-12 mt-8 xl:gap-8 lg:gap-8 gap-4">
         <div class="xl:col-span-6 lg:col-span-6 md:col-span-6 col-span-12">
           <div class="grid grid-cols-12">
             <div class="col-span-6 z-20">
-              <img src="~/assets/img/img.webp" alt="Foto anggota RPL A" srcset="" class="p-1" />
+              <img
+                src="~/assets/img/img.webp"
+                alt="Foto anggota RPL A"
+                srcset=""
+                class="p-1"
+              />
               <img
                 src="~/assets/img/img.webp"
                 class="w-full h-36 p-1 object-cover"
@@ -341,7 +363,12 @@
                 alt="Foto anggota RPL A"
                 srcset=""
               />
-              <img src="~/assets/img/img.webp" alt="Foto anggota RPL A" srcset="" class="p-1" />
+              <img
+                src="~/assets/img/img.webp"
+                alt="Foto anggota RPL A"
+                srcset=""
+                class="p-1"
+              />
             </div>
           </div>
         </div>
@@ -387,24 +414,24 @@
         </div>
       </div>
     </div>
-   <footerRepels />
+    <footerRepels />
   </div>
 </template> 
-<script setup lang="ts"> 
+<script setup lang="ts">
 import footerRepels from "~/components/footerRepels.vue";
 import gradientText from "~/components/gradientText.vue";
 interface Person {
   name: string;
   description: string;
   image: string;
-} 
+}
 useHead({
   title: "REPELS A 17",
   script: [
-        {
-          hid: "json-ld",
-          type: "application/ld+json",
-          innerHTML: `
+    {
+      hid: "json-ld",
+      type: "application/ld+json",
+      innerHTML: `
           {
             "@context": "https://schema.org",
             "@type": "EducationalOrganization",
@@ -412,22 +439,36 @@ useHead({
             "description": "Kami adalah mahasiswa software engineer yang belajar coding, teknologi, dan kolaborasi dalam tim.",
             "url": "https://www.instagram.com/softwareengineer1a",
             "sameAs": ["https://www.instagram.com/softwareengineer1a"]
-          }`
-        }
-      ], 
+          }`,
+    },
+  ],
   meta: [
     { name: "description", content: "Halaman utama REPELS A 17" },
     { property: "og:title", content: "REPELS A 17" },
-    { property: "og:description", content:"Selamat datang di halaman utama REPELS A 17. Jelajahi fitur, kegiatan, dan kolaborasi menarik untuk masa depan yang lebih baik." },
-    { property: "og:image", content: "https://repels-a.vercel.app/_nuxt/img/logo.B8mhwcg1.png" },
+    {
+      property: "og:description",
+      content:
+        "Selamat datang di halaman utama REPELS A 17. Jelajahi fitur, kegiatan, dan kolaborasi menarik untuk masa depan yang lebih baik.",
+    },
+    {
+      property: "og:image",
+      content: "https://repels-a.vercel.app/_nuxt/img/logo.B8mhwcg1.png",
+    },
     { property: "og:url", content: "https://repels-a.vercel.app/" },
     { property: "twitter:title", content: "REPELS A 17" },
-    { property: "twitter:description", content:"Selamat datang di halaman utama REPELS A 17. Jelajahi fitur, kegiatan, dan kolaborasi menarik untuk masa depan yang lebih baik." },
-    { property: "twitter:image", content: "https://repels-a.vercel.app/_nuxt/img/logo.B8mhwcg1.png" },
+    {
+      property: "twitter:description",
+      content:
+        "Selamat datang di halaman utama REPELS A 17. Jelajahi fitur, kegiatan, dan kolaborasi menarik untuk masa depan yang lebih baik.",
+    },
+    {
+      property: "twitter:image",
+      content: "https://repels-a.vercel.app/_nuxt/img/logo.B8mhwcg1.png",
+    },
     { property: "twitter:url", content: "https://repels-a.vercel.app/" },
   ],
   link: [{ rel: "canonical", href: "https://repels-a.vercel.app/" }],
-}); 
+});
 const tes = ref("is");
 const isOpen = ref(false);
 const dataCollegeStudent = ref<Person | null>(null);
@@ -436,241 +477,241 @@ const people = ref<Person[]>([
     name: "Laela",
     description: "Repels A",
     image: "~/assets/img/card1.webp",
-    ig:'-',
-    tt:'-',
-    ld:'-',
+    ig: "-",
+    tt: "-",
+    ld: "-",
   },
   {
     name: "Satria",
     description: "Repels A",
     image: "~/assets/img/card2.webp",
-    ig:'-',
-    tt:'-',
-    ld:'-',
+    ig: "-",
+    tt: "-",
+    ld: "-",
   },
   {
     name: "Faiz",
     description: "Repels A",
     image: "~/assets/img/card3.webp",
-    ig:'-',
-    tt:'-',
-    ld:'-',
+    ig: "-",
+    tt: "-",
+    ld: "-",
   },
   {
     name: "Naufal",
     description: "Repels A",
     image: "~/assets/img/card4.webp",
-    ig:'-',
-    tt:'-',
-    ld:'-',
+    ig: "-",
+    tt: "-",
+    ld: "-",
   },
   {
     name: "Ilham",
     description: "Repels A",
     image: "~/assets/img/card4.webp",
-    ig:'-',
-    tt:'-',
-    ld:'-',
+    ig: "-",
+    tt: "-",
+    ld: "-",
   },
   {
     name: "Daffa",
     description: "Repels A",
     image: "~/assets/img/card1.webp",
-    ig:'-',
-    tt:'-',
-    ld:'-',
+    ig: "-",
+    tt: "-",
+    ld: "-",
   },
   {
     name: "Elsa",
     description: "Repels A",
     image: "~/assets/img/card2.webp",
-    ig:'-',
-    tt:'-',
-    ld:'-',
+    ig: "-",
+    tt: "-",
+    ld: "-",
   },
   {
     name: "Advent",
     description: "Repels A",
     image: "~/assets/img/card3.webp",
-    ig:'-',
-    tt:'-',
-    ld:'-',
+    ig: "-",
+    tt: "-",
+    ld: "-",
   },
   {
     name: "Fadil",
     description: "Repels A",
     image: "~/assets/img/card4.webp",
-    ig:'-',
-    tt:'-',
-    ld:'-',
+    ig: "-",
+    tt: "-",
+    ld: "-",
   },
   {
     name: "Yuni",
     description: "Repels A",
     image: "~/assets/img/card4.webp",
-    ig:'-',
-    tt:'-',
-    ld:'-',
+    ig: "-",
+    tt: "-",
+    ld: "-",
   },
   {
     name: "Sunan",
     description: "Repels A",
     image: "~/assets/img/card1.webp",
-    ig:'-',
-    tt:'-',
-    ld:'-',
+    ig: "-",
+    tt: "-",
+    ld: "-",
   },
   {
     name: "Ai",
     description: "Repels A",
     image: "~/assets/img/card2.webp",
-    ig:'-',
-    tt:'-',
-    ld:'-',
+    ig: "-",
+    tt: "-",
+    ld: "-",
   },
   {
     name: "Irfan",
     description: "Repels A",
     image: "~/assets/img/card3.webp",
-    ig:'-',
-    tt:'-',
-    ld:'-',
+    ig: "-",
+    tt: "-",
+    ld: "-",
   },
   {
     name: "Tsabita",
     description: "Repels A",
     image: "~/assets/img/card4.webp",
-    ig:'-',
-    tt:'-',
-    ld:'-',
+    ig: "-",
+    tt: "-",
+    ld: "-",
   },
   {
     name: "Afif",
     description: "Repels A",
     image: "~/assets/img/card4.webp",
-    ig:'-',
-    tt:'-',
-    ld:'-',
+    ig: "-",
+    tt: "-",
+    ld: "-",
   },
   {
     name: "Hilmi",
     description: "Repels A",
     image: "~/assets/img/card1.webp",
-    ig:'-',
-    tt:'-',
-    ld:'-',
+    ig: "-",
+    tt: "-",
+    ld: "-",
   },
   {
     name: "Fadhlu",
     description: "Repels A",
     image: "~/assets/img/card2.webp",
-    ig:'-',
-    tt:'-',
-    ld:'-',
+    ig: "-",
+    tt: "-",
+    ld: "-",
   },
   {
     name: "Adam",
     description: "Repels A",
     image: "~/assets/img/card3.webp",
-    ig:'-',
-    tt:'-',
-    ld:'-',
+    ig: "-",
+    tt: "-",
+    ld: "-",
   },
   {
     name: "Rayen",
     description: "Repels A",
     image: "~/assets/img/card4.webp",
-    ig:'-',
-    tt:'-',
-    ld:'-',
+    ig: "-",
+    tt: "-",
+    ld: "-",
   },
   {
     name: "Iza",
     description: "Repels A",
     image: "~/assets/img/card4.webp",
-    ig:'-',
-    tt:'-',
-    ld:'-',
+    ig: "-",
+    tt: "-",
+    ld: "-",
   },
   {
     name: "Sakhi",
     description: "Repels A",
     image: "~/assets/img/card1.webp",
-    ig:'-',
-    tt:'-',
-    ld:'-',
+    ig: "-",
+    tt: "-",
+    ld: "-",
   },
   {
     name: "Nabil",
     description: "Repels A",
     image: "~/assets/img/card2.webp",
-    ig:'-',
-    tt:'-',
-    ld:'-',
+    ig: "-",
+    tt: "-",
+    ld: "-",
   },
   {
     name: "Galih",
     description: "Repels A",
     image: "~/assets/img/card3.webp",
-    ig:'-',
-    tt:'-',
-    ld:'-',
+    ig: "-",
+    tt: "-",
+    ld: "-",
   },
   {
     name: "Iqbal",
     description: "Repels A",
     image: "~/assets/img/card4.webp",
-    ig:'-',
-    tt:'-',
-    ld:'-',
+    ig: "-",
+    tt: "-",
+    ld: "-",
   },
   {
     name: "Dinda",
     description: "Repels A",
     image: "~/assets/img/card4.webp",
-    ig:'-',
-    tt:'-',
-    ld:'-',
+    ig: "-",
+    tt: "-",
+    ld: "-",
   },
   {
     name: "Maya",
     description: "Repels A",
     image: "~/assets/img/card1.webp",
-    ig:'-',
-    tt:'-',
-    ld:'-',
+    ig: "-",
+    tt: "-",
+    ld: "-",
   },
   {
     name: "Faisal",
     description: "Repels A",
     image: "~/assets/img/card2.webp",
-    ig:'-',
-    tt:'-',
-    ld:'-',
+    ig: "-",
+    tt: "-",
+    ld: "-",
   },
   {
     name: "Fariz",
     description: "Repels A",
     image: "~/assets/img/card3.webp",
-    ig:'-',
-    tt:'-',
-    ld:'-',
+    ig: "-",
+    tt: "-",
+    ld: "-",
   },
   {
     name: "Nisa",
     description: "Repels A",
     image: "~/assets/img/card4.webp",
-    ig:'-',
-    tt:'-',
-    ld:'-',
+    ig: "-",
+    tt: "-",
+    ld: "-",
   },
   {
     name: "Ajeng",
     description: "Repels A",
     image: "~/assets/img/card4.webp",
-    ig:'-',
-    tt:'-',
-    ld:'-',
+    ig: "-",
+    tt: "-",
+    ld: "-",
   },
 ]);
 
