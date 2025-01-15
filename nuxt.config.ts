@@ -26,7 +26,7 @@ export default defineNuxtConfig({
         {
           hid: "description",
           name: "description",
-          content: "RPL U Angkatan 17",
+          content: "RPL A Angkatan 17",
         },
         { hid: "description", name: "author", content: "REPELS A 17" },
         {

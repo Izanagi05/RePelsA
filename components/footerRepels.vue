@@ -23,7 +23,7 @@
               </div>
             </div>
           </div>
-          <img src="~/assets/img/2.png" class="w-10 mx-auto" alt="" srcset="" />
+          <img src="~/assets/img/2.webp" class="w-10 mx-auto" alt="" srcset="" />
         </div>
         <div class="copyright bg-[#FFFFFF0A] w-full p-4">
           <div class="text-center text-color-custom-10">

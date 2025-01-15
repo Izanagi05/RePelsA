@@ -22,16 +22,16 @@
         </form>
     </div>
     <img
-          src="~/assets/img/img.jpg"
+          src="~/assets/img/img.webp"
           class="w-full rounded-xl mx-1"
-          alt="Foto"
+          alt="Foto anggota RPL A"
         />
         <p class="text-2xl font-semibold">{{dataCollegeStudent?.name}}</p>
         <p class="text-sm font-regular text-gray">{{dataCollegeStudent?.description}}</p>
         <div class="flex items-center mt-2 gap-1">
-          <img src="~/assets/img/2-1.png" class="w-8 rounded-full" alt="rpl a" srcset="" />
-          <img src="~/assets/img/3.png" class="w-8 rounded-full" alt="rpl a" srcset="" />
-          <img src="~/assets/img/1.png" class="w-8 rounded-full" alt="rpl a" srcset="" />
+          <img src="~/assets/img/2.webp" class="w-8 rounded-full" alt="Foto anggota RPL A" srcset="" />
+          <img src="~/assets/img/3.webp" class="w-8 rounded-full" alt="Foto anggota RPL A" srcset="" />
+          <img src="~/assets/img/1.webp" class="w-8 rounded-full" alt="Foto anggota RPL A" srcset="" />
         </div>
       </div>
     </div>
@@ -72,9 +72,9 @@
               bg_gradient_class="bg_gradient_text"
               message="Faces"
             />
-            <p class="xl:text-7xl lg:text-7xl text-5xl text-color-custom-10">
+            <h1 class="xl:text-7xl lg:text-7xl text-5xl text-color-custom-10">
               Behind the
-            </p>
+            </h1>
             <gradient-text
               bg_gradient_class="bg_gradient_text"
               message="Future"
@@ -95,7 +95,7 @@
                 <span class="ml-2 p-2 rounded-full icon_ig"
                   ><img
                     src="~/assets/img/svg/ig.svg"
-                    alt=""
+                    alt="Foto anggota RPL A"
                     class="w-5"
                     srcset=""
                 /></span>
@@ -111,26 +111,26 @@
               <div class="z-30">
                 <div class="flex justify-between mb-8">
                   <img
-                    src="~/assets/img/img.jpg"
+                    src="~/assets/img/img.webp"
                     class="lg:w-44 lg:h-40 xl:w-44 xl:h-40 h-28 rounded-tl-full rounded-bl-full"
-                    alt=""
+                    alt="Foto anggota RPL A"
                     srcset=""
                   />
                   <img
-                    src="~/assets/img/img.jpg"
+                    src="~/assets/img/img.webp"
                     class="lg:w-40 xl:h-40 h-28 rounded-full"
-                    alt=""
+                    alt="Foto anggota RPL A"
                     srcset=""
                   />
                 </div>
                 <img
-                  src="~/assets/img/img.jpg"
+                  src="~/assets/img/img.webp"
                   class="lg:w-full xl:w-full w-48"
                   style="
                     border-top-left-radius: 30%;
                     border-bottom-right-radius: 30%;
                   "
-                  alt=""
+                  alt="Foto anggota RPL A"
                   srcset=""
                 />
               </div>
@@ -139,27 +139,27 @@
               <div class="flex flex-col justify-between lg:h-full">
                 <div class="flex justify-center">
                   <img
-                    src="~/assets/img/img.jpg"
+                    src="~/assets/img/img.webp"
                     class="lg:w-32 xl:w-32 z-30 xl:h-40 lg:h-40 object-cover"
                     style="border-top-left-radius: 30%"
-                    alt=""
+                    alt="Foto anggota RPL A"
                     srcset=""
                   />
                 </div>
                 <div class="flex justify-center"></div>
                 <div class="flex justify-center">
                   <img
-                    src="~/assets/img/img.jpg"
+                    src="~/assets/img/img.webp"
                     class="lg:h-40 xl:h-40 h-28 z-30 object-cover rounded-full"
-                    alt=""
+                    alt="Foto anggota RPL A"
                     srcset=""
                   />
                 </div>
                 <div class="flex justify-center">
                   <img
-                    src="~/assets/img/img.jpg"
+                    src="~/assets/img/img.webp"
                     class="xl:w-32 xl:h-40 lg:w-32 z-30 lg:h-40 object-cover rounded-bl-full rounded-br-full"
-                    alt=""
+                    alt="Foto anggota RPL A"
                     srcset=""
                   />
                   <!-- </div> -->
@@ -177,9 +177,9 @@
             <div class="col-span-6">
               <div class="card main-shadow bg-color-custom-9 rounded-xl">
                 <img
-                  src="~/assets/img/card1.png"
+                  src="~/assets/img/card1.webp"
                   class="rounded-tl-xl rounded-tr-xl h-56 w-full object-cover"
-                  alt=""
+                  alt="Foto anggota RPL A"
                   srcset=""
                 />
                 <div class="p-4">
@@ -190,9 +190,9 @@
             <div class="col-span-6">
               <div class="card main-shadow bg-color-custom-9 rounded-xl">
                 <img
-                  src="~/assets/img/card1.png"
+                  src="~/assets/img/card1.webp"
                   class="rounded-tl-xl rounded-tr-xl h-56 w-full object-cover"
-                  alt=""
+                  alt="Foto anggota RPL A"
                   srcset=""
                 />
                 <div class="p-4">
@@ -203,9 +203,9 @@
             <div class="col-span-6">
               <div class="card main-shadow bg-color-custom-9 rounded-xl">
                 <img
-                  src="~/assets/img/card1.png"
+                  src="~/assets/img/card1.webp"
                   class="rounded-tl-xl rounded-tr-xl h-56 w-full object-cover"
-                  alt=""
+                  alt="Foto anggota RPL A"
                   srcset=""
                 />
                 <div class="p-4">
@@ -216,9 +216,9 @@
             <div class="col-span-6">
               <div class="card main-shadow bg-color-custom-9 rounded-xl">
                 <img
-                  src="~/assets/img/card1.png"
+                  src="~/assets/img/card1.webp"
                   class="rounded-tl-xl rounded-tr-xl h-56 w-full object-cover"
-                  alt=""
+                  alt="Foto anggota RPL A"
                   srcset=""
                 />
                 <div class="p-4">
@@ -236,7 +236,7 @@
               bg_gradient_class="bg_gradient_text"
               message="Spotlight"
             />
-            <p class="xl:text-7xl lg:text-7xl text-5xl text-black">Our</p>
+            <h1 class="xl:text-7xl lg:text-7xl text-5xl text-black">Our</h1>
             <gradient-text
               bg_gradient_class="bg_gradient_text"
               message="Activity"
@@ -268,9 +268,9 @@
           >
             <div>{{ index + 1 }}.</div>
             <img
-              src="~/assets/img/img.jpg"
+              src="~/assets/img/img.webp"
               class="w-10 rounded-full mx-1"
-              alt="Foto"
+              alt="Foto anggota RPL A"
             />
             <div class="flex flex-col justify-between">
               <div class="font-semibold">{{ person.name }}</div>
@@ -326,22 +326,22 @@
         <div class="xl:col-span-6 lg:col-span-6 md:col-span-6 col-span-12">
           <div class="grid grid-cols-12">
             <div class="col-span-6 z-20">
-              <img src="~/assets/img/img.jpg" alt="" srcset="" class="p-1" />
+              <img src="~/assets/img/img.webp" alt="Foto anggota RPL A" srcset="" class="p-1" />
               <img
-                src="~/assets/img/img.jpg"
+                src="~/assets/img/img.webp"
                 class="w-full h-36 p-1 object-cover"
-                alt=""
+                alt="Foto anggota RPL A"
                 srcset=""
               />
             </div>
             <div class="col-span-6 z-20">
               <img
-                src="~/assets/img/img.jpg"
+                src="~/assets/img/img.webp"
                 class="w-full h-36 p-1 object-cover"
-                alt=""
+                alt="Foto anggota RPL A"
                 srcset=""
               />
-              <img src="~/assets/img/img.jpg" alt="" srcset="" class="p-1" />
+              <img src="~/assets/img/img.webp" alt="Foto anggota RPL A" srcset="" class="p-1" />
             </div>
           </div>
         </div>
@@ -399,16 +399,31 @@ interface Person {
   image: string;
 } 
 useHead({
-  title: "REPELS A 17 - Landing Page",
+  title: "REPELS A 17",
+  script: [
+        {
+          hid: "json-ld",
+          type: "application/ld+json",
+          innerHTML: `
+          {
+            "@context": "https://schema.org",
+            "@type": "EducationalOrganization",
+            "name": "RPL A - Software Engineer",
+            "description": "Kami adalah mahasiswa software engineer yang belajar coding, teknologi, dan kolaborasi dalam tim.",
+            "url": "https://www.instagram.com/softwareengineer1a",
+            "sameAs": ["https://www.instagram.com/softwareengineer1a"]
+          }`
+        }
+      ], 
   meta: [
     { name: "description", content: "Halaman utama REPELS A 17" },
-    { property: "og:title", content: "REPELS A 17 - Landing Page" },
-    { property: "og:description", content: "Selamat datang di halaman utama REPELS A 17!" },
-    { property: "og:image", content: "https://repels-a.vercel.app/_nuxt/img/bgawal.f2374ae.jpg" },
+    { property: "og:title", content: "REPELS A 17" },
+    { property: "og:description", content:"Selamat datang di halaman utama REPELS A 17. Jelajahi fitur, kegiatan, dan kolaborasi menarik untuk masa depan yang lebih baik." },
+    { property: "og:image", content: "https://repels-a.vercel.app/_nuxt/img/logo.B8mhwcg1.png" },
     { property: "og:url", content: "https://repels-a.vercel.app/" },
-    { property: "twitter:title", content: "REPELS A 17 - Landing Page" },
-    { property: "twitter:description", content: "Selamat datang di halaman utama REPELS A 17!" },
-    { property: "twitter:image", content: "https://repels-a.vercel.app/_nuxt/img/bgawal.f2374ae.jpg" },
+    { property: "twitter:title", content: "REPELS A 17" },
+    { property: "twitter:description", content:"Selamat datang di halaman utama REPELS A 17. Jelajahi fitur, kegiatan, dan kolaborasi menarik untuk masa depan yang lebih baik." },
+    { property: "twitter:image", content: "https://repels-a.vercel.app/_nuxt/img/logo.B8mhwcg1.png" },
     { property: "twitter:url", content: "https://repels-a.vercel.app/" },
   ],
   link: [{ rel: "canonical", href: "https://repels-a.vercel.app/" }],
@@ -420,242 +435,242 @@ const people = ref<Person[]>([
   {
     name: "Laela",
     description: "Repels A",
-    image: "~/assets/img/card1.png",
-    ig:'',
-    tt:'',
-    ld:'',
+    image: "~/assets/img/card1.webp",
+    ig:'-',
+    tt:'-',
+    ld:'-',
   },
   {
     name: "Satria",
     description: "Repels A",
-    image: "~/assets/img/card2.png",
-    ig:'',
-    tt:'',
-    ld:'',
+    image: "~/assets/img/card2.webp",
+    ig:'-',
+    tt:'-',
+    ld:'-',
   },
   {
     name: "Faiz",
     description: "Repels A",
-    image: "~/assets/img/card3.png",
-    ig:'',
-    tt:'',
-    ld:'',
+    image: "~/assets/img/card3.webp",
+    ig:'-',
+    tt:'-',
+    ld:'-',
   },
   {
     name: "Naufal",
     description: "Repels A",
-    image: "~/assets/img/card4.png",
-    ig:'',
-    tt:'',
-    ld:'',
+    image: "~/assets/img/card4.webp",
+    ig:'-',
+    tt:'-',
+    ld:'-',
   },
   {
     name: "Ilham",
     description: "Repels A",
-    image: "~/assets/img/card4.png",
-    ig:'',
-    tt:'',
-    ld:'',
+    image: "~/assets/img/card4.webp",
+    ig:'-',
+    tt:'-',
+    ld:'-',
   },
   {
     name: "Daffa",
     description: "Repels A",
-    image: "~/assets/img/card1.png",
-    ig:'',
-    tt:'',
-    ld:'',
+    image: "~/assets/img/card1.webp",
+    ig:'-',
+    tt:'-',
+    ld:'-',
   },
   {
     name: "Elsa",
     description: "Repels A",
-    image: "~/assets/img/card2.png",
-    ig:'',
-    tt:'',
-    ld:'',
+    image: "~/assets/img/card2.webp",
+    ig:'-',
+    tt:'-',
+    ld:'-',
   },
   {
     name: "Advent",
     description: "Repels A",
-    image: "~/assets/img/card3.png",
-    ig:'',
-    tt:'',
-    ld:'',
+    image: "~/assets/img/card3.webp",
+    ig:'-',
+    tt:'-',
+    ld:'-',
   },
   {
     name: "Fadil",
     description: "Repels A",
-    image: "~/assets/img/card4.png",
-    ig:'',
-    tt:'',
-    ld:'',
+    image: "~/assets/img/card4.webp",
+    ig:'-',
+    tt:'-',
+    ld:'-',
   },
   {
     name: "Yuni",
     description: "Repels A",
-    image: "~/assets/img/card4.png",
-    ig:'',
-    tt:'',
-    ld:'',
+    image: "~/assets/img/card4.webp",
+    ig:'-',
+    tt:'-',
+    ld:'-',
   },
   {
     name: "Sunan",
     description: "Repels A",
-    image: "~/assets/img/card1.png",
-    ig:'',
-    tt:'',
-    ld:'',
+    image: "~/assets/img/card1.webp",
+    ig:'-',
+    tt:'-',
+    ld:'-',
   },
   {
     name: "Ai",
     description: "Repels A",
-    image: "~/assets/img/card2.png",
-    ig:'',
-    tt:'',
-    ld:'',
+    image: "~/assets/img/card2.webp",
+    ig:'-',
+    tt:'-',
+    ld:'-',
   },
   {
     name: "Irfan",
     description: "Repels A",
-    image: "~/assets/img/card3.png",
-    ig:'',
-    tt:'',
-    ld:'',
+    image: "~/assets/img/card3.webp",
+    ig:'-',
+    tt:'-',
+    ld:'-',
   },
   {
     name: "Tsabita",
     description: "Repels A",
-    image: "~/assets/img/card4.png",
-    ig:'',
-    tt:'',
-    ld:'',
+    image: "~/assets/img/card4.webp",
+    ig:'-',
+    tt:'-',
+    ld:'-',
   },
   {
     name: "Afif",
     description: "Repels A",
-    image: "~/assets/img/card4.png",
-    ig:'',
-    tt:'',
-    ld:'',
+    image: "~/assets/img/card4.webp",
+    ig:'-',
+    tt:'-',
+    ld:'-',
   },
   {
     name: "Hilmi",
     description: "Repels A",
-    image: "~/assets/img/card1.png",
-    ig:'',
-    tt:'',
-    ld:'',
+    image: "~/assets/img/card1.webp",
+    ig:'-',
+    tt:'-',
+    ld:'-',
   },
   {
     name: "Fadhlu",
     description: "Repels A",
-    image: "~/assets/img/card2.png",
-    ig:'',
-    tt:'',
-    ld:'',
+    image: "~/assets/img/card2.webp",
+    ig:'-',
+    tt:'-',
+    ld:'-',
   },
   {
     name: "Adam",
     description: "Repels A",
-    image: "~/assets/img/card3.png",
-    ig:'',
-    tt:'',
-    ld:'',
+    image: "~/assets/img/card3.webp",
+    ig:'-',
+    tt:'-',
+    ld:'-',
   },
   {
     name: "Rayen",
     description: "Repels A",
-    image: "~/assets/img/card4.png",
-    ig:'',
-    tt:'',
-    ld:'',
+    image: "~/assets/img/card4.webp",
+    ig:'-',
+    tt:'-',
+    ld:'-',
   },
   {
     name: "Iza",
     description: "Repels A",
-    image: "~/assets/img/card4.png",
-    ig:'',
-    tt:'',
-    ld:'',
+    image: "~/assets/img/card4.webp",
+    ig:'-',
+    tt:'-',
+    ld:'-',
   },
   {
     name: "Sakhi",
     description: "Repels A",
-    image: "~/assets/img/card1.png",
-    ig:'',
-    tt:'',
-    ld:'',
+    image: "~/assets/img/card1.webp",
+    ig:'-',
+    tt:'-',
+    ld:'-',
   },
   {
     name: "Nabil",
     description: "Repels A",
-    image: "~/assets/img/card2.png",
-    ig:'',
-    tt:'',
-    ld:'',
+    image: "~/assets/img/card2.webp",
+    ig:'-',
+    tt:'-',
+    ld:'-',
   },
   {
     name: "Galih",
     description: "Repels A",
-    image: "~/assets/img/card3.png",
-    ig:'',
-    tt:'',
-    ld:'',
+    image: "~/assets/img/card3.webp",
+    ig:'-',
+    tt:'-',
+    ld:'-',
   },
   {
     name: "Iqbal",
     description: "Repels A",
-    image: "~/assets/img/card4.png",
-    ig:'',
-    tt:'',
-    ld:'',
+    image: "~/assets/img/card4.webp",
+    ig:'-',
+    tt:'-',
+    ld:'-',
   },
   {
     name: "Dinda",
     description: "Repels A",
-    image: "~/assets/img/card4.png",
-    ig:'',
-    tt:'',
-    ld:'',
+    image: "~/assets/img/card4.webp",
+    ig:'-',
+    tt:'-',
+    ld:'-',
   },
   {
     name: "Maya",
     description: "Repels A",
-    image: "~/assets/img/card1.png",
-    ig:'',
-    tt:'',
-    ld:'',
+    image: "~/assets/img/card1.webp",
+    ig:'-',
+    tt:'-',
+    ld:'-',
   },
   {
     name: "Faisal",
     description: "Repels A",
-    image: "~/assets/img/card2.png",
-    ig:'',
-    tt:'',
-    ld:'',
+    image: "~/assets/img/card2.webp",
+    ig:'-',
+    tt:'-',
+    ld:'-',
   },
   {
     name: "Fariz",
     description: "Repels A",
-    image: "~/assets/img/card3.png",
-    ig:'',
-    tt:'',
-    ld:'',
+    image: "~/assets/img/card3.webp",
+    ig:'-',
+    tt:'-',
+    ld:'-',
   },
   {
     name: "Nisa",
     description: "Repels A",
-    image: "~/assets/img/card4.png",
-    ig:'',
-    tt:'',
-    ld:'',
+    image: "~/assets/img/card4.webp",
+    ig:'-',
+    tt:'-',
+    ld:'-',
   },
   {
     name: "Ajeng",
     description: "Repels A",
-    image: "~/assets/img/card4.png",
-    ig:'',
-    tt:'',
-    ld:'',
+    image: "~/assets/img/card4.webp",
+    ig:'-',
+    tt:'-',
+    ld:'-',
   },
 ]);
 
