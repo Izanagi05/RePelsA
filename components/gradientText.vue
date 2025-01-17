@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 :class="['xl:text-7xl lg:text-7xl text-5xl', bg_gradient_class, 'font-bold']">{{message}}</h1>
+    <h1 style="z-index: 99;position: relative;" :class="['xl:text-7xl lg:text-7xl text-5xl', bg_gradient_class, 'font-bold']">{{message}}</h1>
   </div>
 </template>
 <script>

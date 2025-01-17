@@ -189,6 +189,7 @@
       </div>
     </div>
     <div
+      id="spotlight"
       class="xl:px-20 px-6 lg:px-20 Activity relative bg-color-custom-10 z-20 py-20 z-10"
     >
       <div class="grid grid-cols-12">
@@ -251,7 +252,7 @@
         <div
           class="xl:col-span-5 lg:col-span-5 md:col-span-5 col-span-12 lg:mt-0 xl:mt-0 md:mt-0 mt-6 flex justify-center"
         >
-          <div class="max-w-80">
+          <div class="md:max-w-80 lg:max-w-80">
             <gradient-text
               bg_gradient_class="bg_gradient_text"
               message="Spotlight"
@@ -274,7 +275,7 @@
         </div>
       </div>
     </div>
-    <div class="member bg-color-custom-10 relative z-20 pb-20">
+    <div id="member" class="member bg-color-custom-10 relative z-20 pb-20">
       <div class="xl:px-20 px-6 lg:px-20">
         <gradient-text bg_gradient_class="bg_gradient_text" message="Members" />
       </div>
@@ -300,7 +301,10 @@
         </div>
       </div>
     </div>
-    <div class="bg-color-custom-11 relative xl:px-20 px-6 lg:px-20 py-20 about">
+    <div
+      id="about"
+      class="bg-color-custom-11 relative xl:px-20 px-6 lg:px-20 py-20 about"
+    >
       <svg
         class="absolute z-1 right-14"
         width="450"
@@ -378,37 +382,31 @@
           <div class="w-">
             <p class="text-white font-thin text-md pt-5">
               <span
-                :class="[
-                  'xl:text-7xl lg:text-7xl text-5xl',
-                  'bg_gradient_text3',
-                  'font-semibold',
-                ]"
-                >Welcome</span
+                class="xl:text-7xl lg:text-7xl text-5xl bg_gradient_text3 font-semibold"
               >
+                Welcome
+              </span>
               to RPL A! We are a group of Software Engineering students who love
-              technology and teamwork. In our class, we learn how to code, solve
-              problems, and work on exciting projects
+              technology and teamwork.
+            </p>
+            <p class="text-white font-thin text-md pt-5">
+              In our class, we learn how to code, solve problems, and work on
+              exciting projects
               <span
-                :class="[
-                  'xl:text-7xl lg:text-7xl text-5xl',
-                  'bg_gradient_text3',
-                  'font-semibold',
-                ]"
-                >together</span
+                class="xl:text-7xl lg:text-7xl text-5xl bg_gradient_text3 font-semibold"
               >
+                together </span
+              >.
             </p>
             <p class="text-white font-thin text-md pt-5">
               Each of us brings something different to the group, making RPL A a
-              fun and creative place to learn. We’re not just classmates – we’re
-              a team, helping each other grow and get ready for the future in
+              fun and creative place to learn.
               <span
-                :class="[
-                  'xl:text-7xl lg:text-7xl text-5xl',
-                  'bg_gradient_text3',
-                  'font-semibold',
-                ]"
-                >tech</span
+                class="xl:text-7xl lg:text-7xl text-5xl bg_gradient_text3 font-semibold"
               >
+                Tech
+              </span>
+              is our passion.
             </p>
           </div>
         </div>
@@ -417,318 +415,326 @@
     <footerRepels />
   </div>
 </template> 
-<script setup lang="ts">
+<script>
 import gradientText from "~/components/gradientText.vue";
 import footerRepels from "~/components/footerRepels.vue";
-interface Person {
-  name: string;
-  description: string;
-  image: string;
-}
-useHead({
-  title: "REPELS A 17",
-  script: [
-    {
-      hid: "json-ld",
-      type: "application/ld+json",
-      innerHTML: `
-          {
-            "@context": "https://schema.org",
-            "@type": "EducationalOrganization",
-            "name": "RPL A - Software Engineer",
-            "description": "Kami adalah mahasiswa software engineer yang belajar coding, teknologi, dan kolaborasi dalam tim.",
-            "url": "https://www.instagram.com/softwareengineer1a",
-            "sameAs": ["https://www.instagram.com/softwareengineer1a"]
-          }`,
-    },
-  ],
-  meta: [
-    { name: "description", content: "Halaman utama REPELS A 17" },
-    { property: "og:title", content: "REPELS A 17" },
-    {
-      property: "og:description",
-      content:
-        "Selamat datang di halaman utama REPELS A 17. Jelajahi fitur, kegiatan, dan kolaborasi menarik untuk masa depan yang lebih baik.",
-    },
-    {
-      property: "og:image",
-      content: "https://repels-a.vercel.app/_nuxt/img/logo.B8mhwcg1.png",
-    },
-    { property: "og:url", content: "https://repels-a.vercel.app/" },
-    { property: "twitter:title", content: "REPELS A 17" },
-    {
-      property: "twitter:description",
-      content:
-        "Selamat datang di halaman utama REPELS A 17. Jelajahi fitur, kegiatan, dan kolaborasi menarik untuk masa depan yang lebih baik.",
-    },
-    {
-      property: "twitter:image",
-      content: "https://repels-a.vercel.app/_nuxt/img/logo.B8mhwcg1.png",
-    },
-    { property: "twitter:url", content: "https://repels-a.vercel.app/" },
-  ],
-  link: [{ rel: "canonical", href: "https://repels-a.vercel.app/" }],
-});
-const tes = ref("is");
-const isOpen = ref(false);
-const dataCollegeStudent = ref<Person | null>(null);
-const people = ref<Person[]>([
-  {
-    name: "Laela",
-    description: "Repels A",
-    image: "~/assets/img/card1.webp",
-    ig: "-",
-    tt: "-",
-    ld: "-",
-  },
-  {
-    name: "Satria",
-    description: "Repels A",
-    image: "~/assets/img/card2.webp",
-    ig: "-",
-    tt: "-",
-    ld: "-",
-  },
-  {
-    name: "Faiz",
-    description: "Repels A",
-    image: "~/assets/img/card3.webp",
-    ig: "-",
-    tt: "-",
-    ld: "-",
-  },
-  {
-    name: "Naufal",
-    description: "Repels A",
-    image: "~/assets/img/card4.webp",
-    ig: "-",
-    tt: "-",
-    ld: "-",
-  },
-  {
-    name: "Ilham",
-    description: "Repels A",
-    image: "~/assets/img/card4.webp",
-    ig: "-",
-    tt: "-",
-    ld: "-",
-  },
-  {
-    name: "Daffa",
-    description: "Repels A",
-    image: "~/assets/img/card1.webp",
-    ig: "-",
-    tt: "-",
-    ld: "-",
-  },
-  {
-    name: "Elsa",
-    description: "Repels A",
-    image: "~/assets/img/card2.webp",
-    ig: "-",
-    tt: "-",
-    ld: "-",
-  },
-  {
-    name: "Advent",
-    description: "Repels A",
-    image: "~/assets/img/card3.webp",
-    ig: "-",
-    tt: "-",
-    ld: "-",
-  },
-  {
-    name: "Fadil",
-    description: "Repels A",
-    image: "~/assets/img/card4.webp",
-    ig: "-",
-    tt: "-",
-    ld: "-",
-  },
-  {
-    name: "Yuni",
-    description: "Repels A",
-    image: "~/assets/img/card4.webp",
-    ig: "-",
-    tt: "-",
-    ld: "-",
-  },
-  {
-    name: "Sunan",
-    description: "Repels A",
-    image: "~/assets/img/card1.webp",
-    ig: "-",
-    tt: "-",
-    ld: "-",
-  },
-  {
-    name: "Ai",
-    description: "Repels A",
-    image: "~/assets/img/card2.webp",
-    ig: "-",
-    tt: "-",
-    ld: "-",
-  },
-  {
-    name: "Irfan",
-    description: "Repels A",
-    image: "~/assets/img/card3.webp",
-    ig: "-",
-    tt: "-",
-    ld: "-",
-  },
-  {
-    name: "Tsabita",
-    description: "Repels A",
-    image: "~/assets/img/card4.webp",
-    ig: "-",
-    tt: "-",
-    ld: "-",
-  },
-  {
-    name: "Afif",
-    description: "Repels A",
-    image: "~/assets/img/card4.webp",
-    ig: "-",
-    tt: "-",
-    ld: "-",
-  },
-  {
-    name: "Hilmi",
-    description: "Repels A",
-    image: "~/assets/img/card1.webp",
-    ig: "-",
-    tt: "-",
-    ld: "-",
-  },
-  {
-    name: "Fadhlu",
-    description: "Repels A",
-    image: "~/assets/img/card2.webp",
-    ig: "-",
-    tt: "-",
-    ld: "-",
-  },
-  {
-    name: "Adam",
-    description: "Repels A",
-    image: "~/assets/img/card3.webp",
-    ig: "-",
-    tt: "-",
-    ld: "-",
-  },
-  {
-    name: "Rayen",
-    description: "Repels A",
-    image: "~/assets/img/card4.webp",
-    ig: "-",
-    tt: "-",
-    ld: "-",
-  },
-  {
-    name: "Iza",
-    description: "Repels A",
-    image: "~/assets/img/card4.webp",
-    ig: "-",
-    tt: "-",
-    ld: "-",
-  },
-  {
-    name: "Sakhi",
-    description: "Repels A",
-    image: "~/assets/img/card1.webp",
-    ig: "-",
-    tt: "-",
-    ld: "-",
-  },
-  {
-    name: "Nabil",
-    description: "Repels A",
-    image: "~/assets/img/card2.webp",
-    ig: "-",
-    tt: "-",
-    ld: "-",
-  },
-  {
-    name: "Galih",
-    description: "Repels A",
-    image: "~/assets/img/card3.webp",
-    ig: "-",
-    tt: "-",
-    ld: "-",
-  },
-  {
-    name: "Iqbal",
-    description: "Repels A",
-    image: "~/assets/img/card4.webp",
-    ig: "-",
-    tt: "-",
-    ld: "-",
-  },
-  {
-    name: "Dinda",
-    description: "Repels A",
-    image: "~/assets/img/card4.webp",
-    ig: "-",
-    tt: "-",
-    ld: "-",
-  },
-  {
-    name: "Maya",
-    description: "Repels A",
-    image: "~/assets/img/card1.webp",
-    ig: "-",
-    tt: "-",
-    ld: "-",
-  },
-  {
-    name: "Faisal",
-    description: "Repels A",
-    image: "~/assets/img/card2.webp",
-    ig: "-",
-    tt: "-",
-    ld: "-",
-  },
-  {
-    name: "Fariz",
-    description: "Repels A",
-    image: "~/assets/img/card3.webp",
-    ig: "-",
-    tt: "-",
-    ld: "-",
-  },
-  {
-    name: "Nisa",
-    description: "Repels A",
-    image: "~/assets/img/card4.webp",
-    ig: "-",
-    tt: "-",
-    ld: "-",
-  },
-  {
-    name: "Ajeng",
-    description: "Repels A",
-    image: "~/assets/img/card4.webp",
-    ig: "-",
-    tt: "-",
-    ld: "-",
-  },
-]);
 
-// Methods
-function tess(): void {
-  tes.value = "hayy";
-  console.log(tes.value);
-}
-
-function openModal(person: Person): void {
-  isOpen.value = true;
-  dataCollegeStudent.value = { ...person };
-  const modal = document.getElementById("my_modal_1") as HTMLDialogElement;
-  if (modal) {
-    modal.showModal();
-  }
-}
-</script> 
-<style>
-</style>
+export default {
+  head() {
+    return {
+      title: "REPELS A 17",
+      script: [
+        {
+          hid: "json-ld",
+          type: "application/ld+json",
+          innerHTML: `
+            {
+              "@context": "https://schema.org",
+              "@type": "EducationalOrganization",
+              "name": "RPL A - Software Engineer",
+              "description": "Kami adalah mahasiswa software engineer yang belajar coding, teknologi, dan kolaborasi dalam tim.",
+              "url": "https://www.instagram.com/softwareengineer1a",
+              "sameAs": ["https://www.instagram.com/softwareengineer1a"]
+            }
+          `,
+        },
+      ],
+      meta: [
+        { name: "description", content: "Halaman utama REPELS A 17" },
+        { property: "og:title", content: "REPELS A 17" },
+        {
+          property: "og:description",
+          content:
+            "Selamat datang di halaman utama REPELS A 17. Jelajahi fitur, kegiatan, dan kolaborasi menarik untuk masa depan yang lebih baik.",
+        },
+        {
+          property: "og:image",
+          content: "https://repels-a.vercel.app/_nuxt/img/logo.B8mhwcg1.png",
+        },
+        { property: "og:url", content: "https://repels-a.vercel.app/" },
+        { property: "twitter:title", content: "REPELS A 17" },
+        {
+          property: "twitter:description",
+          content:
+            "Selamat datang di halaman utama REPELS A 17. Jelajahi fitur, kegiatan, dan kolaborasi menarik untuk masa depan yang lebih baik.",
+        },
+        {
+          property: "twitter:image",
+          content: "https://repels-a.vercel.app/_nuxt/img/logo.B8mhwcg1.png",
+        },
+        { property: "twitter:url", content: "https://repels-a.vercel.app/" },
+      ],
+      link: [{ rel: "canonical", href: "https://repels-a.vercel.app/" }],
+    };
+  },
+  data() {
+    return {
+      tes: "is",
+      isOpen: true,
+      dataCollegeStudent: null,
+      people: [
+        {
+          name: "Laela",
+          description: "Repels A",
+          image: "~/assets/img/card1.webp",
+          ig: "-",
+          tt: "-",
+          ld: "-",
+        },
+        {
+          name: "Satria",
+          description: "Repels A",
+          image: "~/assets/img/card2.webp",
+          ig: "-",
+          tt: "-",
+          ld: "-",
+        },
+        {
+          name: "Faiz",
+          description: "Repels A",
+          image: "~/assets/img/card3.webp",
+          ig: "-",
+          tt: "-",
+          ld: "-",
+        },
+        {
+          name: "Naufal",
+          description: "Repels A",
+          image: "~/assets/img/card4.webp",
+          ig: "-",
+          tt: "-",
+          ld: "-",
+        },
+        {
+          name: "Ilham",
+          description: "Repels A",
+          image: "~/assets/img/card4.webp",
+          ig: "-",
+          tt: "-",
+          ld: "-",
+        },
+        {
+          name: "Daffa",
+          description: "Repels A",
+          image: "~/assets/img/card1.webp",
+          ig: "-",
+          tt: "-",
+          ld: "-",
+        },
+        {
+          name: "Elsa",
+          description: "Repels A",
+          image: "~/assets/img/card2.webp",
+          ig: "-",
+          tt: "-",
+          ld: "-",
+        },
+        {
+          name: "Advent",
+          description: "Repels A",
+          image: "~/assets/img/card3.webp",
+          ig: "-",
+          tt: "-",
+          ld: "-",
+        },
+        {
+          name: "Fadil",
+          description: "Repels A",
+          image: "~/assets/img/card4.webp",
+          ig: "-",
+          tt: "-",
+          ld: "-",
+        },
+        {
+          name: "Yuni",
+          description: "Repels A",
+          image: "~/assets/img/card4.webp",
+          ig: "-",
+          tt: "-",
+          ld: "-",
+        },
+        {
+          name: "Sunan",
+          description: "Repels A",
+          image: "~/assets/img/card1.webp",
+          ig: "-",
+          tt: "-",
+          ld: "-",
+        },
+        {
+          name: "Ai",
+          description: "Repels A",
+          image: "~/assets/img/card2.webp",
+          ig: "-",
+          tt: "-",
+          ld: "-",
+        },
+        {
+          name: "Irfan",
+          description: "Repels A",
+          image: "~/assets/img/card3.webp",
+          ig: "-",
+          tt: "-",
+          ld: "-",
+        },
+        {
+          name: "Tsabita",
+          description: "Repels A",
+          image: "~/assets/img/card4.webp",
+          ig: "-",
+          tt: "-",
+          ld: "-",
+        },
+        {
+          name: "Afif",
+          description: "Repels A",
+          image: "~/assets/img/card4.webp",
+          ig: "-",
+          tt: "-",
+          ld: "-",
+        },
+        {
+          name: "Hilmi",
+          description: "Repels A",
+          image: "~/assets/img/card1.webp",
+          ig: "-",
+          tt: "-",
+          ld: "-",
+        },
+        {
+          name: "Fadhlu",
+          description: "Repels A",
+          image: "~/assets/img/card2.webp",
+          ig: "-",
+          tt: "-",
+          ld: "-",
+        },
+        {
+          name: "Adam",
+          description: "Repels A",
+          image: "~/assets/img/card3.webp",
+          ig: "-",
+          tt: "-",
+          ld: "-",
+        },
+        {
+          name: "Rayen",
+          description: "Repels A",
+          image: "~/assets/img/card4.webp",
+          ig: "-",
+          tt: "-",
+          ld: "-",
+        },
+        {
+          name: "Iza",
+          description: "Repels A",
+          image: "~/assets/img/card4.webp",
+          ig: "-",
+          tt: "-",
+          ld: "-",
+        },
+        {
+          name: "Sakhi",
+          description: "Repels A",
+          image: "~/assets/img/card1.webp",
+          ig: "-",
+          tt: "-",
+          ld: "-",
+        },
+        {
+          name: "Nabil",
+          description: "Repels A",
+          image: "~/assets/img/card2.webp",
+          ig: "-",
+          tt: "-",
+          ld: "-",
+        },
+        {
+          name: "Galih",
+          description: "Repels A",
+          image: "~/assets/img/card3.webp",
+          ig: "-",
+          tt: "-",
+          ld: "-",
+        },
+        {
+          name: "Iqbal",
+          description: "Repels A",
+          image: "~/assets/img/card4.webp",
+          ig: "-",
+          tt: "-",
+          ld: "-",
+        },
+        {
+          name: "Dinda",
+          description: "Repels A",
+          image: "~/assets/img/card4.webp",
+          ig: "-",
+          tt: "-",
+          ld: "-",
+        },
+        {
+          name: "Maya",
+          description: "Repels A",
+          image: "~/assets/img/card1.webp",
+          ig: "-",
+          tt: "-",
+          ld: "-",
+        },
+        {
+          name: "Faisal",
+          description: "Repels A",
+          image: "~/assets/img/card2.webp",
+          ig: "-",
+          tt: "-",
+          ld: "-",
+        },
+        {
+          name: "Fariz",
+          description: "Repels A",
+          image: "~/assets/img/card3.webp",
+          ig: "-",
+          tt: "-",
+          ld: "-",
+        },
+        {
+          name: "Nisa",
+          description: "Repels A",
+          image: "~/assets/img/card4.webp",
+          ig: "-",
+          tt: "-",
+          ld: "-",
+        },
+        {
+          name: "Ajeng",
+          description: "Repels A",
+          image: "~/assets/img/card4.webp",
+          ig: "-",
+          tt: "-",
+          ld: "-",
+        },
+      ],
+    };
+  },
+  methods: {
+    tess() {
+      this.tes = "hayy";
+      console.log(this.tes);
+    },
+    openModal(person) {
+      this.isOpen = true;
+      this.dataCollegeStudent = Object.assign({}, person);
+      const modal = document.getElementById("my_modal_1");
+      modal.showModal();
+    },
+    closeModal() {
+      this.isOpen = false;
+      this.dataCollegeStudent = null;
+      const modal = document.getElementById("my_modal_1");
+      if (modal) {
+        modal.close();
+      }
+    },
+  },
+};
+</script>  

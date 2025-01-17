@@ -4,7 +4,7 @@
       <div class="text-end pr-6 pt-6"></div>
       <ul class="mt-6">
         <li class="nav-itemmb">
-          <a
+          <a 
             class="nxlink text-white text-decoration-none"
             href="#home"
             @click="isActive = !isActive"
@@ -12,7 +12,7 @@
           >
         </li>
         <li class="nav-itemmb">
-          <a
+          <a 
             class="nxlink text-white text-decoration-none"
             @click="isActive = !isActive"
             href="#about"
@@ -20,7 +20,7 @@
           >
         </li>
         <li class="nav-itemmb">
-          <a
+          <a 
             class="nxlink text-white text-decoration-none"
             @click="isActive = !isActive"
             href="#skills"
@@ -28,7 +28,7 @@
           >
         </li>
         <li class="nav-itemmb">
-          <a
+          <a 
             class="nxlink text-white text-decoration-none"
             @click="isActive = !isActive"
             href="#portofolio"
@@ -66,17 +66,17 @@
               class="flex flex-col gap-2 mt-2 mb-4 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6"
             >
               <li class="flex items-center p-1 text-sm gap-x-2 text-slate-600">
-                <a href="#" class="flex items-center text-color-custom-10"
+                <a href="#spotlight" class="flex items-center text-color-custom-10"
                   >Spotlight</a
                 >
               </li>
               <li class="flex items-center p-1 text-sm gap-x-2 text-slate-600">
-                <a href="#" class="flex items-center text-color-custom-10"
+                <a href="#member" class="flex items-center text-color-custom-10"
                   >Member</a
                 >
               </li>
               <li class="flex items-center p-1 text-sm gap-x-2 text-slate-600">
-                <a href="#" class="flex items-center text-color-custom-10"
+                <a href="#about" class="flex items-center text-color-custom-10"
                   >About</a
                 >
               </li>
