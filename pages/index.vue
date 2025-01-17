@@ -418,8 +418,8 @@
   </div>
 </template> 
 <script setup lang="ts">
-import footerRepels from "~/components/footerRepels.vue";
 import gradientText from "~/components/gradientText.vue";
+import footerRepels from "~/components/footerRepels.vue";
 interface Person {
   name: string;
   description: string;
@@ -730,6 +730,5 @@ function openModal(person: Person): void {
   }
 }
 </script> 
-
 <style>
 </style>
