@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /private/
+Disallow: /api/
+
+# Allow crawling of all public assets and pages
+Allow: /
+
+# Specify the sitemap location
+Sitemap: https://repels-a.vercel.app/sitemap.xml
